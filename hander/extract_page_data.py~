@@ -1,0 +1,51 @@
+"""
+ cookie expires at some hours later when we log on site,
+ so we need  take the  cookie that log on site  to request  site  every times 
+"""
+import urllib.parse
+import ssl
+from urllib import request
+import hashlib
+import json
+from http import cookiejar
+import sys
+from bs4 import BeautifulSoup
+class ExtractHouseInfo :
+    '''
+    gets the lastest seconde-house information  of lianjia from the website(https://xa.lianjia.com/ershoufang/)
+    '''
+    def __init__(self,exe_path,house_name,debug=1):
+
+        self.house_page_content_list=[]
+        self.house_detail_info_url=[]
+        
+    '''
+
+    '''
+    def extract_house_url(self,soup):
+        for div in soup.find(class_="bigImgList").children:
+            for img in div.children:
+                if img['class'][0]=='img':
+                    self.house_detail_info_url.append(img['href'])
+                    print(len(self.house_detail_info_url))
+        
+    def extract_detail_info(self):
+        for page in self.house_page_content_list:
+            soup=BeautifulSoup(page,'lxml')
+            self.extract_house_url(soup)
+
+    def request_house_detail(self):
+        for url in self.house_detail_info_url:
+
+
+
+class HouseDetail:
+
+    def __init__(self):
+        self.house_id=''
+        self.total_price=''
+        self.average_price=''
+        self.area=''
+
+
+
