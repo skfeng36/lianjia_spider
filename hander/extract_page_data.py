@@ -21,7 +21,10 @@ class ExtractHouseInfo :
     '''
 
     '''
-    def extract_house_url(self,soup):
+    def __extract_house_url__(self,soup):
+        '''
+        extract all href of house page from tag of bigImgList 
+        '''
         for div in soup.find(class_="bigImgList").children:
             for img in div.children:
                 if img['class'][0]=='img':
@@ -29,15 +32,22 @@ class ExtractHouseInfo :
                     
         
     def extract_house_info(self):
+        '''
+        extract all href of house page and save it to house_detail_info_url
+        '''
         for page in self.house_page_content_list:
             soup=BeautifulSoup(page,'lxml')
-            self.extract_house_url(soup)
+            self.__extract_house_url__(soup)
 
         print(len(self.house_page_content_list))
 
         print(len(self.house_detail_info_url))
+        print('extract_house_info done')
 
     def extract_house_detail(self,house_detail_page_list):
+        '''
+        extract all house information from every detail url and save it to house_detail_info_list
+        '''
         print(len(house_detail_page_list))
         for page in house_detail_page_list:
             house_detail=HouseDetail()
@@ -76,15 +86,9 @@ class ExtractHouseInfo :
                                             house_detail.tongtou=div2.string 
             self.house_detail_info_list.append(house_detail)
         print(len(self.house_detail_info_list))
+        print('extract_house_detail done')
 
                                         
-
-
-
-                    
-
-                        
-
 
 class HouseDetail:
 

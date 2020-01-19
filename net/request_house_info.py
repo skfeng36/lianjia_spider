@@ -70,7 +70,9 @@ class HouseInfo :
             if len(html)!=0:
                 self.house_detail_page_list.append(html)
             #print(html)
+        
         print(len(self.house_detail_page_list))
+        print('get house detail page')
         return True
 
 
