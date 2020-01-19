@@ -5,7 +5,7 @@ from hander import extract_page_data
 from concurrent_hander import concurrent_request
 import sys
 import time
-
+from  hander import analyse
 
 if __name__ == '__main__':
 
@@ -34,6 +34,9 @@ if __name__ == '__main__':
         end=time.time()
         total_time=end-start
         print(total_time)
+        analyse_house=analyse.AnalyseHouse(current_hander.house_detail_info_queue)
+        analyse_house.save_file(exe_path+'/file/house.csv')
+
  
 
 

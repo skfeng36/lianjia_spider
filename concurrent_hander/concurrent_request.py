@@ -86,7 +86,7 @@ class ConcurrentHander :
                 else:
                     print('get house detail page thread:{} is done'.format(id))
         self.detail_url_queue.join()
-        print(self.detail_page_queue.qsize())
+        print('总共下载{}个房屋详情页'.format(self.detail_page_queue.qsize()))
         end=time.time()
         total_time=end-start
         print('get house detail page :{}'.format(total_time))
@@ -142,9 +142,9 @@ class ConcurrentHander :
 
     def concurrent_extract_house_detail(self):
         start=time.time()
-        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
            
-            future_to_url = {executor.submit(self.__extract_house_detail__,id): id for id in range(0,10)}
+            future_to_url = {executor.submit(self.__extract_house_detail__,id): id for id in range(0,20)}
             for future in concurrent.futures.as_completed(future_to_url):
                 id = future_to_url[future]
                 try:
@@ -154,7 +154,7 @@ class ConcurrentHander :
                 else:
                     print('extract house detail thread:{} is done'.format(id))
         self.detail_page_queue.join()
-        print(self.house_detail_info_queue.qsize())
+        print('总共提取{}个房屋详细信息'.format(self.house_detail_info_queue.qsize()))
         end=time.time()
         total_time=end-start
         print('extract house detail :{}'.format(total_time))
@@ -196,7 +196,7 @@ class ConcurrentHander :
 
 
         #self.house_page_content_queue.join()
-        print(self.detail_url_queue.qsize())
+        print('总共提取{}个房屋url'.format(self.detail_url_queue.qsize()))
         end=time.time()
         total_time=end-start
         print('extract house url :{}'.format(total_time))
@@ -247,7 +247,7 @@ class ConcurrentHander :
             future_to_url = {executor.submit(self.__get_house_page_info__,id): id for id in range(0,1)}
 
         #self.house_page_url_queue.join()
-        print(self.house_page_content_queue.qsize())
+        print('总共{}个页面'.format(self.house_page_content_queue.qsize()))
         end=time.time()
         total_time=end-start
         print('get  house page :{}'.format(total_time))
@@ -264,6 +264,8 @@ class HouseDetail:
         self.layout=''
         self.dress=''
         self.tongtou=''
-
+    def to_string(self):
+        return [self.house_id,self.total_price,self.average_price,self.area,self.layout,self.dress,self.tongtou]
+   
 
 
