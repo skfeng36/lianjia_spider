@@ -58,12 +58,13 @@ class ConcurrentHander :
         '''
         i=0
         while True:
-            url=self.detail_url_queue.get()
+            data=self.detail_url_queue.get()
+            url=data[1]
             i=i+1
             self.detail_url_queue.task_done()
             html=self.request_page(url)
             if len(html)!=0:
-                self.detail_page_queue.put(html)
+                self.detail_page_queue.put((data[0],html))
             if self.detail_url_queue.empty():
                 break;
             
@@ -97,10 +98,12 @@ class ConcurrentHander :
         '''
         i=0
         while True :
-            page=self.detail_page_queue.get()
+            data=self.detail_page_queue.get()
+            page=data[1]
             i=i+1
             self.detail_page_queue.task_done()
             house_detail=HouseDetail()
+            house_detail.house_id=data[0]
             soup=BeautifulSoup(page,'lxml')
             for div in soup.find(class_="overview").children:
                 if div['class'][0]=='content':
@@ -164,9 +167,11 @@ class ConcurrentHander :
         extract all href of house page from tag of bigImgList 
         '''
         for div in soup.find(class_="bigImgList").children:
+            if div['class'][0]=='item':
+                house_id=div['data-houseid']
             for img in div.children:
                 if img['class'][0]=='img':
-                    self.detail_url_queue.put(img['href'])
+                    self.detail_url_queue.put((house_id,img['href']))
                     
         
     def __extract_house_info__(self,id):
@@ -238,7 +243,7 @@ class ConcurrentHander :
         start=time.time()   
         urlencode_house_name=urllib.parse.quote(self.house_name)
         url='https://xa.lianjia.com/ershoufang/pg{}rs'+urlencode_house_name+'/'
-        for page in range(0,3):
+        for page in range(1,4):
             url2=url.format(page)
             self.house_page_url_queue.put(url2)
         

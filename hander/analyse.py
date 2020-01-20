@@ -19,9 +19,9 @@ class AnalyseHouse:
         with open(file_name,'w') as f:
             out_csv=csv.writer(f)
             self.house_detail_info_list.sort(key=self.__sort_by_area__)
-            out_csv.writerow(['房屋编号','面积','总价','均价'])
+            out_csv.writerow(['房屋编号','面积','总价','装修情况','均价'])
             for house in self.house_detail_info_list:
                 #print(house.to_string())
-                out_csv.writerow([house.house_id,house.area,house.total_price+'万',house.average_price+'元/平米'])
+                out_csv.writerow(['N'+house.house_id,house.area,house.total_price+'万',house.dress,house.average_price+'元/平米'])
 
 
