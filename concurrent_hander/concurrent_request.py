@@ -38,16 +38,17 @@ class ConcurrentHander :
         "Cookie": " userId=7; type=0; username=huayang; remember=false; password=e10adc3949ba59abbe56e057f20f883e",
         "Referer": "http://www.guozdx.com/"
         }
+        self.timeout=5
             
     def request_page(self,url):
         request = urllib.request.Request(url,headers=self.http_header)
         try:
-            response = self.opener.open(request)
+            response = self.opener.open(request,timeout=self.timeout)
 
         except urllib.error.URLError as e:
             print('except: {0}'.format(e.reason))
             print('request  https://xa.lianjia.com/ershoufang failure!')
-            return False
+            return ''
         if response.code==200:
             html = response.read().decode("utf-8")
         return html  
@@ -198,8 +199,6 @@ class ConcurrentHander :
         
            future_to_url = {executor.submit(self.__extract_house_info__,id): id for id in range(0,3)}
         
-
-
         #self.house_page_content_queue.join()
         print('总共提取{}个房屋url'.format(self.detail_url_queue.qsize()))
         end=time.time()
@@ -210,19 +209,20 @@ class ConcurrentHander :
     def __request_page__(self,url):
         request = urllib.request.Request(url,headers=self.http_header)
         try:
-            response = self.opener.open(request)
+            response = self.opener.open(request,timeout=self.timeout)
 
         except urllib.error.URLError as e:
             print('except: {0}'.format(e.reason))
             print('request  https://xa.lianjia.com/ershoufang failure!')
-            return False
-        if response.code==200:
-            html = response.read().decode("utf-8")
-        return html   
+            return ''
+        else:
+            if response.code==200:
+                html = response.read().decode("utf-8")
+            return html   
    
     def __get_house_page_info__(self,id):
         '''
-        log on the site firstly. then save the cookie that site send .
+        request the house page of lianjia
         '''
       
         i=0
@@ -233,6 +233,8 @@ class ConcurrentHander :
             html=self.request_page(url)
             if len(html)!=0:
                 self.house_page_content_queue.put(html)
+            else:
+                return False
             if self.house_page_url_queue.empty():
                 break;
 
@@ -240,6 +242,9 @@ class ConcurrentHander :
         return True
 
     def concurrent_get_house_page_info(self):
+        '''
+        concurrently request every page  that you want to search from lianjia
+        '''
         start=time.time()   
         urlencode_house_name=urllib.parse.quote(self.house_name)
         url='https://xa.lianjia.com/ershoufang/pg{}rs'+urlencode_house_name+'/'
@@ -250,13 +255,25 @@ class ConcurrentHander :
         with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
            
             future_to_url = {executor.submit(self.__get_house_page_info__,id): id for id in range(0,1)}
-
+            for future in concurrent.futures.as_completed(future_to_url):
+                id = future_to_url[future]
+                try:
+                    ret = future.result()
+                except Exception as exc:
+                    print('%r generated an exception: %s' % (id, exc))
+                    return False
+                else:
+                    if not ret:
+                        return ret
         #self.house_page_url_queue.join()
-        print('总共{}个页面'.format(self.house_page_content_queue.qsize()))
+        size=self.house_page_content_queue.qsize()
+        print('总共{}个页面'.format(size))
+        if size==0:
+            return False
         end=time.time()
         total_time=end-start
         print('get  house page :{}'.format(total_time))
-
+        return True
 
 
 class HouseDetail:

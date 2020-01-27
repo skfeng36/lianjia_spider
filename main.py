@@ -27,7 +27,10 @@ if __name__ == '__main__':
 
         current_hander=concurrent_request.ConcurrentHander(exe_path,house_name,0)
         start=time.time()
-        current_hander.concurrent_get_house_page_info()
+        ret=current_hander.concurrent_get_house_page_info()
+        if not ret:
+            print('get house page failure!')
+            exit(1)
         current_hander.concurrent_extract_house_info()
         current_hander.concurrent_get_house_detail_page()
         current_hander.concurrent_extract_house_detail()
@@ -35,7 +38,7 @@ if __name__ == '__main__':
         total_time=end-start
         print(total_time)
         analyse_house=analyse.AnalyseHouse(current_hander.house_detail_info_queue)
-        analyse_house.save_file(exe_path+'/file/house.csv')
+        analyse_house.output_house_info(exe_path+'/file/house.csv')
 
  
 
