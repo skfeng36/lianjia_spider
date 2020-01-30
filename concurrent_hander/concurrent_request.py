@@ -1,6 +1,5 @@
 """
- cookie expires at some hours later when we log on site,
- so we need  take the  cookie that log on site  to request  site  every times 
+ the class ConcurrentHander  is used to get the lastest secode-house information of lianjia.
 """
 import urllib.parse
 import ssl
@@ -16,11 +15,12 @@ import time
 
 class ConcurrentHander :
     '''
-    gets the lastest seconde-house information  of lianjia from the website(https://xa.lianjia.com/ershoufang/)
+    gets the lastest seconde-hand house information  of lianjia from the website(https://xa.lianjia.com/ershoufang/)
     '''
-    def __init__(self,exe_path,house_name,debug):
+    def __init__(self,exe_path,house_name,debug,config):
 
         self.exe_path=exe_path
+        self.config=config
         self.house_name=house_name
         self.house_page_url_queue=queue.Queue()
         self.house_page_content_queue=queue.Queue()
@@ -41,16 +41,23 @@ class ConcurrentHander :
         self.timeout=5
             
     def request_page(self,url):
+        '''
+        request the url 
+        '''
         request = urllib.request.Request(url,headers=self.http_header)
         try:
             response = self.opener.open(request,timeout=self.timeout)
 
-        except urllib.error.URLError as e:
-            print('except: {0}'.format(e.reason))
-            print('request  https://xa.lianjia.com/ershoufang failure!')
+        except Exception as e:
+            print('except: {0}'.format(e))
+            print('request {0} failure!'.format(url))
+            return ''
+        except:
+            print('unkown except')
             return ''
         if response.code==200:
             html = response.read().decode("utf-8")
+
         return html  
  
     def __get_house_detail_page__(self,id):
@@ -63,9 +70,13 @@ class ConcurrentHander :
             url=data[1]
             i=i+1
             self.detail_url_queue.task_done()
+            print('thread:{0} request:{1}'.format(id,url))
+
             html=self.request_page(url)
             if len(html)!=0:
                 self.detail_page_queue.put((data[0],html))
+            else:
+                return False
             if self.detail_url_queue.empty():
                 break;
             
@@ -76,22 +87,30 @@ class ConcurrentHander :
 
     def concurrent_get_house_detail_page(self):
         start=time.time()
-        with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
+        thread_num=self.config.get('thread','get_house_detail_page_thread_num')
+        with concurrent.futures.ThreadPoolExecutor(max_workers=int(thread_num)) as executor:
            
-            future_to_url = {executor.submit(self.__get_house_detail_page__,id): id for id in range(0,15)}
+            future_to_url = {executor.submit(self.__get_house_detail_page__,id): id for id in range(0,int(thread_num))}
             for future in concurrent.futures.as_completed(future_to_url):
                 id = future_to_url[future]
                 try:
                     data = future.result()
                 except Exception as exc:
                     print('%r generated an exception: %s' % (id, exc))
+                    break
                 else:
+                    if not data:
+                        return False
                     print('get house detail page thread:{} is done'.format(id))
+        size=self.detail_page_queue.qsize()  
+        if size==0:
+            return False 
         self.detail_url_queue.join()
-        print('总共下载{}个房屋详情页'.format(self.detail_page_queue.qsize()))
+        print('总共下载{}个房屋详情页'.format(size))
         end=time.time()
         total_time=end-start
         print('get house detail page :{}'.format(total_time))
+        return True
 
     def __extract_house_detail__(self,id):
         '''
@@ -146,9 +165,10 @@ class ConcurrentHander :
 
     def concurrent_extract_house_detail(self):
         start=time.time()
-        with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
+        thread_num=self.config.get('thread','extract_house_detail_thread_num')
+        with concurrent.futures.ThreadPoolExecutor(max_workers=int(thread_num)) as executor:
            
-            future_to_url = {executor.submit(self.__extract_house_detail__,id): id for id in range(0,20)}
+            future_to_url = {executor.submit(self.__extract_house_detail__,id): id for id in range(0,int(thread_num))}
             for future in concurrent.futures.as_completed(future_to_url):
                 id = future_to_url[future]
                 try:
@@ -186,20 +206,40 @@ class ConcurrentHander :
             i=i+1
             self.house_page_content_queue.task_done()
             soup=BeautifulSoup(page,'lxml')
-            self.__extract_house_url__(soup)
+            try:
+                self.__extract_house_url__(soup)
+            except:
+                print('unknown except')
+                return False
             if self.house_page_content_queue.empty():
                 break;
 
         print('extract house url thread{}: executor {} task done'.format(id,i))
+        return True
 
     def concurrent_extract_house_info(self):
+        '''
+        extract the url of each house from the house page
+        '''
         
         start=time.time()
-        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+        thread_num=self.config.get('thread','extract_house_info_thread_num')
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=int(thread_num)) as executor:
         
-           future_to_url = {executor.submit(self.__extract_house_info__,id): id for id in range(0,3)}
-        
-        #self.house_page_content_queue.join()
+           future_to_url = {executor.submit(self.__extract_house_info__,id): id for id in range(0,int(thread_num))}
+           
+           for future in concurrent.futures.as_completed(future_to_url):
+                id = future_to_url[future]
+                try:
+                    ret = future.result()
+                except Exception as exc:
+                    print('%r generated an exception: %s' % (id, exc))
+                    return False
+                else:
+                    if not ret:
+                        return ret       
+        self.house_page_content_queue.join()
         print('总共提取{}个房屋url'.format(self.detail_url_queue.qsize()))
         end=time.time()
         total_time=end-start
@@ -207,13 +247,16 @@ class ConcurrentHander :
 
 
     def __request_page__(self,url):
+        '''
+        request the url by given
+        '''
         request = urllib.request.Request(url,headers=self.http_header)
         try:
             response = self.opener.open(request,timeout=self.timeout)
 
         except urllib.error.URLError as e:
             print('except: {0}'.format(e.reason))
-            print('request  https://xa.lianjia.com/ershoufang failure!')
+            print('request {} failure!'.format(url))
             return ''
         else:
             if response.code==200:
@@ -238,7 +281,7 @@ class ConcurrentHander :
             if self.house_page_url_queue.empty():
                 break;
 
-        print('get  house page thread{}: executor {} task done'.format(id,i))
+        print('get house page thread{}: executor {} task done'.format(id,i))
         return True
 
     def concurrent_get_house_page_info(self):
@@ -251,10 +294,11 @@ class ConcurrentHander :
         for page in range(1,4):
             url2=url.format(page)
             self.house_page_url_queue.put(url2)
+        thread_num=self.config.get('thread','get_house_page_thread_num')
         
-        with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=int(thread_num)) as executor:
            
-            future_to_url = {executor.submit(self.__get_house_page_info__,id): id for id in range(0,1)}
+            future_to_url = {executor.submit(self.__get_house_page_info__,id): id for id in range(0,int(thread_num))}
             for future in concurrent.futures.as_completed(future_to_url):
                 id = future_to_url[future]
                 try:
@@ -265,14 +309,14 @@ class ConcurrentHander :
                 else:
                     if not ret:
                         return ret
-        #self.house_page_url_queue.join()
+        self.house_page_url_queue.join()
         size=self.house_page_content_queue.qsize()
         print('总共{}个页面'.format(size))
         if size==0:
             return False
         end=time.time()
         total_time=end-start
-        print('get  house page :{}'.format(total_time))
+        print('get house page :{}'.format(total_time))
         return True
 
 
