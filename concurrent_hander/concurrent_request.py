@@ -17,7 +17,7 @@ class ConcurrentHander :
     '''
     gets the lastest seconde-hand house information  of lianjia from the website(https://xa.lianjia.com/ershoufang/)
     '''
-    def __init__(self,exe_path,house_name,debug,config):
+    def __init__(self,exe_path,house_name,debug,config,log):
 
         self.exe_path=exe_path
         self.config=config
@@ -39,6 +39,8 @@ class ConcurrentHander :
         "Referer": "http://www.guozdx.com/"
         }
         self.timeout=5
+        self.log=log
+
     def clear(self):
         self.house_page_url_queue=queue.Queue()
         self.house_page_content_queue=queue.Queue()
@@ -55,11 +57,11 @@ class ConcurrentHander :
             response = self.opener.open(request,timeout=self.timeout)
 
         except Exception as e:
-            print('except: {0}'.format(e))
-            print('request {0} failure!'.format(url))
+            self.log.debug('except: {0}'.format(e))
+            self.log.debug('request {0} failure!'.format(url))
             return ''
         except:
-            print('unkown except')
+            self.log.debug('unkown except')
             return ''
         if response.code==200:
             html = response.read().decode("utf-8")
@@ -76,7 +78,7 @@ class ConcurrentHander :
             url=data[1]
             i=i+1
             self.detail_url_queue.task_done()
-            print('thread:{0} request:{1}'.format(id,url))
+            self.log.debug('thread:{0} request:{1}'.format(id,url))
 
             html=self.request_page(url)
             if len(html)!=0:
@@ -88,7 +90,7 @@ class ConcurrentHander :
             
             #print(html)
         
-        print('get house detail page thread{}:executor {} task'.format(id,i))
+        self.log.debug('get house detail page thread{}:executor {} task'.format(id,i))
         return True
 
     def concurrent_get_house_detail_page(self):
@@ -102,20 +104,20 @@ class ConcurrentHander :
                 try:
                     data = future.result()
                 except Exception as exc:
-                    print('%r generated an exception: %s' % (id, exc))
+                    self.log.debug('%r generated an exception: %s' % (id, exc))
                     
                 else:
                     if not data:
                         return False
-                    print('get house detail page thread:{} is done'.format(id))
+                    self.log.debug('get house detail page thread:{} is done'.format(id))
         size=self.detail_page_queue.qsize()  
         if size==0:
             return False 
         self.detail_url_queue.join()
-        print('总共下载{}个房屋详情页'.format(size))
+        self.log.info('总共下载{}个房屋详情页'.format(size))
         end=time.time()
         total_time=end-start
-        print('get house detail page :{}'.format(total_time))
+        self.log.info('get house detail page :{}'.format(total_time))
         return True
 
     def __extract_house_detail__(self,id):
@@ -167,7 +169,7 @@ class ConcurrentHander :
             if self.detail_page_queue.empty():
                 break;
 
-        print('extract house detail thread{}:executor {} task'.format(id,i))
+        self.log.debug('extract house detail thread{}:executor {} task'.format(id,i))
 
     def concurrent_extract_house_detail(self):
         start=time.time()
@@ -180,14 +182,14 @@ class ConcurrentHander :
                 try:
                     data = future.result()
                 except Exception as exc:
-                    print('%r generated an exception: %s' % (id, exc))
+                    self.log.debug('%r generated an exception: %s' % (id, exc))
                 else:
-                    print('extract house detail thread:{} is done'.format(id))
+                    self.log.debug('extract house detail thread:{} is done'.format(id))
         self.detail_page_queue.join()
-        print('总共提取{}个房屋详细信息'.format(self.house_detail_info_queue.qsize()))
+        self.log.info('总共提取{}个房屋详细信息'.format(self.house_detail_info_queue.qsize()))
         end=time.time()
         total_time=end-start
-        print('extract house detail :{}'.format(total_time))
+        self.log.info('extract house detail :{}'.format(total_time))
 
     def __extract_house_url__(self,soup):
         '''
@@ -220,7 +222,7 @@ class ConcurrentHander :
             if self.house_page_content_queue.empty():
                 break;
 
-        print('extract house url thread{}: executor {} task done'.format(id,i))
+        self.log.debug('extract house url thread{}: executor {} task done'.format(id,i))
         return True
 
     def concurrent_extract_house_info(self):
@@ -246,10 +248,10 @@ class ConcurrentHander :
                     if not ret:
                         return ret       
         self.house_page_content_queue.join()
-        print('总共提取{}个房屋url'.format(self.detail_url_queue.qsize()))
+        self.log.info('总共提取{}个房屋url'.format(self.detail_url_queue.qsize()))
         end=time.time()
         total_time=end-start
-        print('extract house url :{}'.format(total_time))
+        self.log.info('extract house url :{}'.format(total_time))
 
 
     def __request_page__(self,url):
@@ -261,8 +263,8 @@ class ConcurrentHander :
             response = self.opener.open(request,timeout=self.timeout)
 
         except urllib.error.URLError as e:
-            print('except: {0}'.format(e.reason))
-            print('request {} failure!'.format(url))
+            self.log.debug('except: {0}'.format(e.reason))
+            self.log.debug('request {} failure!'.format(url))
             return ''
         else:
             if response.code==200:
@@ -287,7 +289,7 @@ class ConcurrentHander :
             if self.house_page_url_queue.empty():
                 break;
 
-        print('get house page thread{}: executor {} task done'.format(id,i))
+        self.log.debug('get house page thread{}: executor {} task done'.format(id,i))
         return True
 
     def concurrent_get_house_page_info(self):
@@ -310,19 +312,19 @@ class ConcurrentHander :
                 try:
                     ret = future.result()
                 except Exception as exc:
-                    print('%r generated an exception: %s' % (id, exc))
+                    self.log.debug('%r generated an exception: %s' % (id, exc))
                     return False
                 else:
                     if not ret:
                         return ret
         self.house_page_url_queue.join()
         size=self.house_page_content_queue.qsize()
-        print('总共{}个页面'.format(size))
+        self.log.info('总共{}个页面'.format(size))
         if size==0:
             return False
         end=time.time()
         total_time=end-start
-        print('get house page :{}'.format(total_time))
+        self.log.info('get house page :{}'.format(total_time))
         return True
 
 

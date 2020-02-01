@@ -17,7 +17,8 @@ class HtmlData:
     content=''
 
 class HouseServerThread(threading.Thread):
-    def __init__(self,name,html_file_name):
+
+    def __init__(self,name,html_file_name,log):
         threading.Thread.__init__(self)
         self.name=name
         self.html_file_name=html_file_name
@@ -26,6 +27,7 @@ class HouseServerThread(threading.Thread):
         self.stop=False
         self.version=0
         self.setDaemon(True)
+        self.log=log
 
     def __update_data__(self):
         '''
@@ -48,7 +50,7 @@ class HouseServerThread(threading.Thread):
         '''
 
         server_address =('127.0.0.1',8888)
-        print('thread:{0} http server listening.....'.format(self.name))
+        self.log.info('thread:{0} http server listening.....'.format(self.name))
         with HTTPServer(server_address,self.RequestHouseInfoHandler) as httpd:
             while not self.stop:
                 self.__update_data__()

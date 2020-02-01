@@ -14,6 +14,8 @@ from thread import handle_house_thread
 from thread import handle_concurrent_house_thread
 import  signal
 from util import signal_handle
+from util import logging_handle
+import logging
 
 if __name__ == '__main__':
 
@@ -23,12 +25,13 @@ if __name__ == '__main__':
     config=configparser.ConfigParser()
     config.read(exe_path+'/conf/config.ini')
 
-    sinal_handle=signal_handle.SignalHandle(signal.SIG_IGN)
+    signal_handler=signal_handle.SignalHandle(signal.SIG_IGN)
+    log=logging_handle.Log(exe_path,logging.INFO).loger()
 
     
-    concurrent_house_thread=handle_concurrent_house_thread.ConcurrentGetHouseThread('concurrent_get_house',exe_path,house_name,0,config=config)
+    concurrent_house_thread=handle_concurrent_house_thread.ConcurrentGetHouseThread('concurrent_get_house',exe_path,house_name,0,config=config,log=log)
     concurrent_house_thread.start()
-    house_server_thread=handle_house_thread.HouseServerThread('server',exe_path+'/file/house.html')
+    house_server_thread=handle_house_thread.HouseServerThread('server',exe_path+'/file/house.html',log)
     house_server_thread.start()
     house_server_thread.join()
     concurrent_house_thread.join()

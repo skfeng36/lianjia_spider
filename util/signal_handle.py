@@ -11,8 +11,7 @@ class SignalHandle:
 
     def set_signal(self,signal_type):
         self.signal_tpye=signal_type
-    
-        
+           
 
     def signal_handle(self):
         if self.signal_type==signal.SIGINT:
