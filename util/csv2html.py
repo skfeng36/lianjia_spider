@@ -41,7 +41,7 @@ class CSV2HTML:
             self.html_content=self.html_content+'<table border=\"1\">'
             for row in self.csv_file:
                 self.html_content=self.html_content+'<tr>'
-                if row[0]=='N101105761825':
+                if row[1]=='N101105761825':
                     for r in row:
                         self.html_content=self.html_content+'<td bgcolor="red">{0}'.format(r)
                         self.html_content=self.html_content+'</td>'

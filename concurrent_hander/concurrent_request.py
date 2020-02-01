@@ -39,7 +39,13 @@ class ConcurrentHander :
         "Referer": "http://www.guozdx.com/"
         }
         self.timeout=5
-            
+    def clear(self):
+        self.house_page_url_queue=queue.Queue()
+        self.house_page_content_queue=queue.Queue()
+        self.detail_url_queue= queue.Queue()
+        self.detail_page_queue=queue.Queue()
+        self.house_detail_info_queue=queue.Queue()
+        
     def request_page(self,url):
         '''
         request the url 
@@ -97,7 +103,7 @@ class ConcurrentHander :
                     data = future.result()
                 except Exception as exc:
                     print('%r generated an exception: %s' % (id, exc))
-                    break
+                    
                 else:
                     if not data:
                         return False

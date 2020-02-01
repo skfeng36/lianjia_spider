@@ -6,12 +6,13 @@ make_request_house_info_handler is a function that return a RequestHouseInfoHand
 from http.server import HTTPServer, BaseHTTPRequestHandler  # Py 3
 
 
-def make_request_house_info_handler(html_content):
+def make_request_house_info_handler(html_data):
     '''
     RequestHouseInfoHandler is a subclass of BaseHTTPRequestHandler which handle people's requests for house information.
 	
     '''
 
+            
     class RequestHouseInfoHandler(BaseHTTPRequestHandler):
 
         def __init__(self, *args, **kwargs):
@@ -28,7 +29,7 @@ def make_request_house_info_handler(html_content):
             if self.path == '/house':
                 self.send_header('Content-Type', 'text/html;charset=utf-8')
                 self.end_headers()
-                self.wfile.write(html_content.encode('utf-8'))
+                self.wfile.write(html_data.content.encode('utf-8'))
 
             else:
 
