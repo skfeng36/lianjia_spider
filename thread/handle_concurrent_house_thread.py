@@ -27,6 +27,7 @@ class ConcurrentGetHouseThread(threading.Thread):
         
     def run(self):
 
+        self.current_hander.get_house_total_num()
         while not self.stop :
             start=time.time()
             retry=self.retry

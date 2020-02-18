@@ -29,6 +29,7 @@ class ConcurrentHander :
         self.detail_page_queue=queue.Queue()
         self.house_detail_info_queue=queue.Queue()
 
+        self.house_total_num=0
         self.cookie_file=self.exe_path+'/file/cookie'
         self.cookie=cookiejar.MozillaCookieJar(self.cookie_file)
         self.hander=request.HTTPCookieProcessor(self.cookie)
@@ -47,7 +48,21 @@ class ConcurrentHander :
         self.detail_url_queue= queue.Queue()
         self.detail_page_queue=queue.Queue()
         self.house_detail_info_queue=queue.Queue()
-        
+    
+    def __extract_house_total_num__(self,page):
+        data_json=json.loads(page)
+        if type(data_json)==dict:
+            if 'data' in data_json:
+                if 'info' in data_json['data']:
+                    if 'sellNum' in data_json['data']['info']:
+                        self.house_total_num=int(data_json['data']['info']['sellNum'])
+                        
+    def get_house_total_num(self):
+        url='https://xa.lianjia.com/api/listtop?semParams%5BsemResblockId%5D=3820031038702754&semParams%5BsemType%5D=resblock&semParams%5BsemSource%5D=ershou_xiaoqu'
+        page=self.request_page(url)
+        self.__extract_house_total_num__(page)
+
+
     def request_page(self,url):
         '''
         request the url 
@@ -299,7 +314,16 @@ class ConcurrentHander :
         start=time.time()   
         urlencode_house_name=urllib.parse.quote(self.house_name)
         url='https://xa.lianjia.com/ershoufang/pg{}rs'+urlencode_house_name+'/'
-        for page in range(1,4):
+
+        num_page_per=int(self.config.get('page','num_page_per'))
+        page_total_num=self.house_total_num/num_page_per
+        page_total_num_int=self.house_total_num//num_page_per
+
+        if page_total_num>page_total_num_int:
+            page_total_num=page_total_num_int+1
+
+        print(page_total_num)
+        for page in range(1,page_total_num+1):
             url2=url.format(page)
             self.house_page_url_queue.put(url2)
         thread_num=self.config.get('thread','get_house_page_thread_num')
