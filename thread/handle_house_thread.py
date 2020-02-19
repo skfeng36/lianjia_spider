@@ -15,13 +15,15 @@ HtmlData stores the html data from house.html file
 class HtmlData:
     version=0
     content=''
+    index_content=''
 
 class HouseServerThread(threading.Thread):
 
-    def __init__(self,name,html_file_name,log):
+    def __init__(self,name,html_file_name,index_file_name,log):
         threading.Thread.__init__(self)
         self.name=name
         self.html_file_name=html_file_name
+        self.index_file_name=index_file_name
         self.html_data=HtmlData()
         self.RequestHouseInfoHandler=http_server.make_request_house_info_handler(self.html_data)
         self.stop=False
@@ -33,12 +35,25 @@ class HouseServerThread(threading.Thread):
         '''
         udpate http_data when house.html file was updated .
         '''
-        with open(self.html_file_name) as input_file:
-            info = os.fstat(input_file.fileno())
-            if self.version!=info.st_mtime:
-                self.html_data.content=input_file.read()
-                self.version=info.st_atime
-                self.html_data.version=self.version
+        try:
+            with open(self.html_file_name) as input_file:
+                info = os.fstat(input_file.fileno())
+                if self.version!=info.st_mtime:
+                    self.html_data.content=input_file.read()
+                    self.version=info.st_atime
+                    self.html_data.version=self.version
+        
+        except Exception as exc:
+            self.html_data.content='waiting for few  minutes ,please!'
+
+        try:
+            with open(self.index_file_name) as input_file:
+                info = os.fstat(input_file.fileno())
+                self.html_data.index_content=input_file.read()
+                    
+        
+        except Exception as exc:
+            self.html_data.content='loading index page , waiting for few  minutes ,please!'
         
     def set_stop(self,stop):
         self.stop=stop

@@ -29,6 +29,9 @@ class ConcurrentHander :
         self.detail_page_queue=queue.Queue()
         self.house_detail_info_queue=queue.Queue()
 
+        self.urlencode_house_name=urllib.parse.quote(self.house_name)
+        
+
         self.house_total_num=0
         self.cookie_file=self.exe_path+'/file/cookie'
         self.cookie=cookiejar.MozillaCookieJar(self.cookie_file)
@@ -50,15 +53,43 @@ class ConcurrentHander :
         self.house_detail_info_queue=queue.Queue()
     
     def __extract_house_total_num__(self,page):
+        '''
+        this function extracts total number of house from the content that the website replys
+
+        the house_total_num parameter will be used to calculate the numbrer of house'page 
+        '''
         data_json=json.loads(page)
         if type(data_json)==dict:
             if 'data' in data_json:
                 if 'info' in data_json['data']:
                     if 'sellNum' in data_json['data']['info']:
                         self.house_total_num=int(data_json['data']['info']['sellNum'])
+
+    def __extract_neighborhood_id__(self,page):
+        '''
+        this function extracts neighborhood's id from the content that the website replys
+        '''
+        soup=BeautifulSoup(page,'lxml')
+
+        for div in soup.find(class_="sellListContent").children:
+            if div['class'][0]=='clear':
+                return div['data-lj_action_resblock_id']
+                
+            
                         
     def get_house_total_num(self):
-        url='https://xa.lianjia.com/api/listtop?semParams%5BsemResblockId%5D=3820031038702754&semParams%5BsemType%5D=resblock&semParams%5BsemSource%5D=ershou_xiaoqu'
+        '''
+        this function firstly gets neighborhood's id from the website.
+        then it extracts the house's total number from the content that the website replys
+        '''
+
+        main_url='https://xa.lianjia.com/ershoufang/rs'+self.urlencode_house_name+'/'
+
+        page=self.request_page(main_url)
+        neighborhood_id=self.__extract_neighborhood_id__(page)
+
+        url='https://xa.lianjia.com/api/listtop?semParams%5BsemResblockId%5D='+neighborhood_id+'&semParams%5BsemType%5D=resblock&semParams%5BsemSource%5D=ershou_xiaoqu'
+        
         page=self.request_page(url)
         self.__extract_house_total_num__(page)
 
@@ -90,14 +121,15 @@ class ConcurrentHander :
         i=0
         while True:
             data=self.detail_url_queue.get()
-            url=data[1]
+            url=data.href
             i=i+1
             self.detail_url_queue.task_done()
             self.log.debug('thread:{0} request:{1}'.format(id,url))
 
             html=self.request_page(url)
             if len(html)!=0:
-                self.detail_page_queue.put((data[0],html))
+                data.house_detail_page=html
+                self.detail_page_queue.put(data)
             else:
                 return False
             if self.detail_url_queue.empty():
@@ -142,11 +174,11 @@ class ConcurrentHander :
         i=0
         while True :
             data=self.detail_page_queue.get()
-            page=data[1]
+            page=data.house_detail_page
             i=i+1
             self.detail_page_queue.task_done()
-            house_detail=HouseDetail()
-            house_detail.house_id=data[0]
+            house_detail=data.house_detail
+            
             soup=BeautifulSoup(page,'lxml')
             for div in soup.find(class_="overview").children:
                 if div['class'][0]=='content':
@@ -180,7 +212,7 @@ class ConcurrentHander :
                                             house_detail.dress=div2.string                       
                                         if div2['class'][0]=='mainInfo':
                                             house_detail.tongtou=div2.string 
-            self.house_detail_info_queue.put(house_detail)
+            self.house_detail_info_queue.put(data)
             if self.detail_page_queue.empty():
                 break;
 
@@ -210,14 +242,38 @@ class ConcurrentHander :
         '''
         extract all href of house page from tag of bigImgList 
         '''
+        house_info_list={}
         for div in soup.find(class_="bigImgList").children:
             if div['class'][0]=='item':
                 house_id=div['data-houseid']
+                
             for img in div.children:
                 if img['class'][0]=='img':
-                    self.detail_url_queue.put((house_id,img['href']))
-                    
-        
+                    house_info=HouseInfo()
+                    house_info.href=img['href']
+                    house_info.house_id=house_id
+                    self.detail_url_queue.put(house_info)
+            house_info_list[house_id]=house_info
+
+
+        for div in soup.find(class_="sellListContent").children:
+            if div['class'][0]=='clear':
+                if div['data-lj_action_housedel_id'] in house_info_list:
+                    house_info=house_info_list[div['data-lj_action_housedel_id']]
+                    house_info.neighborhood_id=div['data-lj_action_resblock_id']
+                
+            for clear in div.children:
+                
+                if clear['class'][0]=='info':
+                    for follow in clear.children:
+                        if follow['class'][0]=='followInfo':
+                            
+                            for data in follow.strings:
+                                content=data.split('/')
+                                house_info.publish_time=content[1]
+                                house_info.focus_num=content[0]
+                                
+                             
     def __extract_house_info__(self,id):
         '''
         extract all href of house page and save it to house_detail_info_url
@@ -312,8 +368,8 @@ class ConcurrentHander :
         concurrently request every page  that you want to search from lianjia
         '''
         start=time.time()   
-        urlencode_house_name=urllib.parse.quote(self.house_name)
-        url='https://xa.lianjia.com/ershoufang/pg{}rs'+urlencode_house_name+'/'
+        
+        url='https://xa.lianjia.com/ershoufang/pg{}rs'+self.urlencode_house_name+'/'
 
         num_page_per=int(self.config.get('page','num_page_per'))
         page_total_num=self.house_total_num/num_page_per
@@ -351,11 +407,23 @@ class ConcurrentHander :
         self.log.info('get house page :{}'.format(total_time))
         return True
 
+class HouseInfo:
+
+    def __init__(self):
+        self.house_detail=HouseDetail()
+        self.publish_time=''
+        self.focus_num=''
+        self.href=''
+        self.house_id=''
+        self.house_detail_page=''
+        self.neighborhood_id=''
+        
+    def to_string(self):
+        return [self.publish_time,self.focus_num,self.href,self.house_id]+self.house_detail.to_string()
 
 class HouseDetail:
 
     def __init__(self):
-        self.house_id=''
         self.total_price=''
         self.average_price=''
         self.area=''
@@ -363,7 +431,7 @@ class HouseDetail:
         self.dress=''
         self.tongtou=''
     def to_string(self):
-        return [self.house_id,self.total_price,self.average_price,self.area,self.layout,self.dress,self.tongtou]
+        return [self.total_price,self.average_price,self.area,self.layout,self.dress,self.tongtou]
    
 
 

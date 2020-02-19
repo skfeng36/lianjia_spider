@@ -18,6 +18,7 @@ def make_request_house_info_handler(html_data):
         def __init__(self, *args, **kwargs):
 
             BaseHTTPRequestHandler.__init__(self, *args, **kwargs)
+        
 
         def do_GET(self):
 
@@ -25,15 +26,25 @@ def make_request_house_info_handler(html_data):
             this function handles get request.
 			'''
             self.send_response(200)
-
-            if self.path == '/house':
+            request_line=self.path.split('?')
+            if len(request_line)>0:
+                path=request_line[0]
+            else:
+                path='/'
+            print(path)
+            if path == '/house':
+                self.send_header('Content-Type', 'text/html;charset=utf-8')
+                self.end_headers()
+                self.wfile.write(html_data.content.encode('utf-8'))
+            elif path=='/search':
                 self.send_header('Content-Type', 'text/html;charset=utf-8')
                 self.end_headers()
                 self.wfile.write(html_data.content.encode('utf-8'))
 
             else:
 
-                html = ' '
-                self.wfile.write(html.encode('utf-8'))
+                self.send_header('Content-Type', 'text/html;charset=utf-8')
+                self.end_headers()
+                self.wfile.write(html_data.index_content.encode('utf-8'))
 
     return RequestHouseInfoHandler

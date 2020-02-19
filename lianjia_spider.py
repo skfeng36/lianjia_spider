@@ -20,7 +20,9 @@ import logging
 if __name__ == '__main__':
 
     exe_path=sys.path[0]
-    house_name='泾渭上城'
+    #house_name='泾渭上城'
+    house_name='缤纷南郡'
+
     concurrent=True
     config=configparser.ConfigParser()
     config.read(exe_path+'/conf/config.ini')
@@ -31,7 +33,7 @@ if __name__ == '__main__':
     
     concurrent_house_thread=handle_concurrent_house_thread.ConcurrentGetHouseThread('concurrent_get_house',exe_path,house_name,0,config=config,log=log)
     concurrent_house_thread.start()
-    house_server_thread=handle_house_thread.HouseServerThread('server',exe_path+'/file/house.html',log)
+    house_server_thread=handle_house_thread.HouseServerThread('server',exe_path+'/file/house.html',exe_path+'/page/index.html',log)
     house_server_thread.start()
     house_server_thread.join()
     concurrent_house_thread.join()
