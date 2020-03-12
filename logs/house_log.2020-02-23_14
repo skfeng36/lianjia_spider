@@ -1,0 +1,710 @@
+02/23/2020 13:03:59 PM - INFO - get house page :0.8561820983886719
+02/23/2020 13:03:59 PM - INFO - expand_region_url start......
+02/23/2020 13:04:02 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 13:04:03 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 13:04:03 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 13:04:03 PM - INFO - 总共4个页面
+02/23/2020 13:06:40 PM - INFO - get house page :0.8384058475494385
+02/23/2020 13:06:40 PM - INFO - expand_region_url start......
+02/23/2020 13:06:44 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 13:06:45 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 13:06:45 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 13:06:45 PM - INFO - 总共4个页面
+02/23/2020 13:06:45 PM - INFO - get house page :4.865453481674194
+02/23/2020 13:06:45 PM - INFO - expand_region_url finished.....
+02/23/2020 13:06:45 PM - INFO - get_region_house_page start......
+02/23/2020 13:06:49 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:06:50 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:06:50 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:06:51 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:10:39 PM - INFO - get house page :0.6962029933929443
+02/23/2020 13:10:39 PM - INFO - expand_region_url start......
+02/23/2020 13:10:44 PM - DEBUG - __expand_region_url_task__ thread0: executor 6 task done
+02/23/2020 13:10:44 PM - DEBUG - __expand_region_url_task__ thread1: executor 7 task done
+02/23/2020 13:10:45 PM - DEBUG - __expand_region_url_task__ thread2: executor 1 task done
+02/23/2020 13:10:45 PM - INFO - 总共4个页面
+02/23/2020 13:10:45 PM - INFO - get house page :6.238403797149658
+02/23/2020 13:10:45 PM - INFO - expand_region_url finished.....
+02/23/2020 13:10:45 PM - INFO - get_region_house_page start......
+02/23/2020 13:11:33 PM - INFO - get house page :0.6769671440124512
+02/23/2020 13:11:33 PM - INFO - expand_region_url start......
+02/23/2020 13:11:36 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 13:11:37 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 13:11:37 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 13:11:37 PM - INFO - 总共4个页面
+02/23/2020 13:11:37 PM - INFO - get house page :3.737394332885742
+02/23/2020 13:11:37 PM - INFO - expand_region_url finished.....
+02/23/2020 13:11:37 PM - INFO - get_region_house_page start......
+02/23/2020 13:11:39 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:11:39 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:11:39 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:11:39 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:11:39 PM - INFO - 总共4个页面
+02/23/2020 13:11:39 PM - INFO - get house page :1.9835398197174072
+02/23/2020 13:11:39 PM - INFO - get_region_house_page finished.....
+02/23/2020 13:11:39 PM - INFO - extract_house_url_info start....
+02/23/2020 13:11:41 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 13:11:41 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 13:11:41 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 13:11:41 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 13:13:07 PM - INFO - get house page :0.77164626121521
+02/23/2020 13:13:07 PM - INFO - expand_region_url start......
+02/23/2020 13:13:10 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 13:13:10 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 13:13:10 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 13:13:10 PM - INFO - 总共4个页面
+02/23/2020 13:13:10 PM - INFO - get house page :3.580064296722412
+02/23/2020 13:13:10 PM - INFO - expand_region_url finished.....
+02/23/2020 13:13:10 PM - INFO - get_region_house_page start......
+02/23/2020 13:13:12 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:13:12 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:13:12 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:13:12 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:13:12 PM - INFO - 总共4个页面
+02/23/2020 13:13:12 PM - INFO - get house page :1.9789106845855713
+02/23/2020 13:13:12 PM - INFO - get_region_house_page finished.....
+02/23/2020 13:13:12 PM - INFO - extract_house_url_info start....
+02/23/2020 13:14:12 PM - INFO - get house page :0.8225126266479492
+02/23/2020 13:14:12 PM - INFO - expand_region_url start......
+02/23/2020 13:14:15 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 13:14:15 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 13:14:16 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 13:14:16 PM - INFO - 总共4个页面
+02/23/2020 13:14:16 PM - INFO - get house page :3.7891364097595215
+02/23/2020 13:14:16 PM - INFO - expand_region_url finished.....
+02/23/2020 13:14:16 PM - INFO - get_region_house_page start......
+02/23/2020 13:14:17 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:14:17 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:14:17 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:14:17 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:14:17 PM - INFO - 总共4个页面
+02/23/2020 13:14:17 PM - INFO - get house page :1.9527201652526855
+02/23/2020 13:14:17 PM - INFO - get_region_house_page finished.....
+02/23/2020 13:14:17 PM - INFO - extract_house_url_info start....
+02/23/2020 13:14:20 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 13:14:20 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 13:14:20 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 13:14:20 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 13:14:20 PM - INFO - 总共提取116个房屋url
+02/23/2020 13:14:20 PM - INFO - extract house url :2.099508285522461
+02/23/2020 13:14:20 PM - INFO - extract_house_url_info finished....
+02/23/2020 13:18:53 PM - INFO - get house page :0.8206684589385986
+02/23/2020 13:18:53 PM - INFO - expand_region_url start......
+02/23/2020 13:18:57 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 13:18:57 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 13:18:58 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 13:18:58 PM - INFO - 总共4个页面
+02/23/2020 13:18:58 PM - INFO - get house page :4.270870923995972
+02/23/2020 13:18:58 PM - INFO - expand_region_url finished.....
+02/23/2020 13:18:58 PM - INFO - get_region_house_page start......
+02/23/2020 13:19:00 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:19:00 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:19:00 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:19:00 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:19:00 PM - INFO - 总共4个页面
+02/23/2020 13:19:00 PM - INFO - get house page :2.0661585330963135
+02/23/2020 13:19:00 PM - INFO - get_region_house_page finished.....
+02/23/2020 13:19:00 PM - INFO - extract_house_url_info start....
+02/23/2020 13:19:01 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 13:19:01 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 13:19:01 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 13:19:01 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 13:19:01 PM - INFO - 总共提取116个房屋url
+02/23/2020 13:19:01 PM - INFO - extract house url :1.866973638534546
+02/23/2020 13:19:01 PM - INFO - extract_house_url_info finished....
+02/23/2020 13:22:45 PM - INFO - get house page :0.7973213195800781
+02/23/2020 13:22:45 PM - INFO - expand_region_url start......
+02/23/2020 13:22:48 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 13:22:49 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 13:22:50 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 13:22:50 PM - INFO - 总共4个页面
+02/23/2020 13:22:50 PM - INFO - get house page :4.769259929656982
+02/23/2020 13:22:50 PM - INFO - expand_region_url finished.....
+02/23/2020 13:22:50 PM - INFO - get_region_house_page start......
+02/23/2020 13:22:52 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:22:52 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:22:52 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:22:52 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:22:52 PM - INFO - 总共4个页面
+02/23/2020 13:22:52 PM - INFO - get house page :2.046687126159668
+02/23/2020 13:22:52 PM - INFO - get_region_house_page finished.....
+02/23/2020 13:22:52 PM - INFO - extract_house_url_info start....
+02/23/2020 13:22:53 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 13:22:53 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 13:22:53 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 13:22:53 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 13:22:53 PM - INFO - 总共提取116个房屋url
+02/23/2020 13:22:53 PM - INFO - extract house url :1.0219008922576904
+02/23/2020 13:22:53 PM - INFO - extract_house_url_info finished....
+02/23/2020 13:31:55 PM - INFO - get house page :0.8327066898345947
+02/23/2020 13:31:55 PM - INFO - expand_region_url start......
+02/23/2020 13:31:58 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 13:31:59 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 13:31:59 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 13:31:59 PM - INFO - 总共4个页面
+02/23/2020 13:31:59 PM - INFO - get house page :4.196766138076782
+02/23/2020 13:31:59 PM - INFO - expand_region_url finished.....
+02/23/2020 13:31:59 PM - INFO - get_region_house_page start......
+02/23/2020 13:32:01 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:32:01 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:32:01 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:32:01 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:32:01 PM - INFO - 总共4个页面
+02/23/2020 13:32:01 PM - INFO - get house page :2.1305816173553467
+02/23/2020 13:32:01 PM - INFO - get_region_house_page finished.....
+02/23/2020 13:32:01 PM - INFO - extract_house_url_info start....
+02/23/2020 13:32:02 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 13:32:02 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 13:32:02 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 13:32:02 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 13:32:02 PM - INFO - 总共提取116个房屋url
+02/23/2020 13:32:02 PM - INFO - extract house url :1.0114288330078125
+02/23/2020 13:32:02 PM - INFO - extract_house_url_info finished....
+02/23/2020 13:32:44 PM - INFO - get house page :0.8085362911224365
+02/23/2020 13:32:44 PM - INFO - expand_region_url start......
+02/23/2020 13:32:48 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 13:32:48 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 13:32:48 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 13:32:48 PM - INFO - 总共4个页面
+02/23/2020 13:32:48 PM - INFO - get house page :3.8741681575775146
+02/23/2020 13:32:48 PM - INFO - expand_region_url finished.....
+02/23/2020 13:32:48 PM - INFO - get_region_house_page start......
+02/23/2020 13:32:50 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:32:50 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:32:50 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:32:50 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:32:50 PM - INFO - 总共4个页面
+02/23/2020 13:32:50 PM - INFO - get house page :2.032405376434326
+02/23/2020 13:32:50 PM - INFO - get_region_house_page finished.....
+02/23/2020 13:32:50 PM - INFO - extract_house_url_info start....
+02/23/2020 13:32:51 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 13:32:51 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 13:32:51 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 13:32:51 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 13:32:51 PM - INFO - 总共提取116个房屋url
+02/23/2020 13:32:51 PM - INFO - extract house url :1.0198118686676025
+02/23/2020 13:32:51 PM - INFO - extract_house_url_info finished....
+02/23/2020 13:33:18 PM - INFO - get house page :0.8952617645263672
+02/23/2020 13:33:18 PM - INFO - expand_region_url start......
+02/23/2020 13:33:22 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 13:33:22 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 13:33:22 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 13:33:22 PM - INFO - 总共4个页面
+02/23/2020 13:33:22 PM - INFO - get house page :4.255918264389038
+02/23/2020 13:33:22 PM - INFO - expand_region_url finished.....
+02/23/2020 13:33:22 PM - INFO - get_region_house_page start......
+02/23/2020 13:33:24 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:33:24 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:33:24 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:33:24 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:33:24 PM - INFO - 总共4个页面
+02/23/2020 13:33:24 PM - INFO - get house page :2.0057802200317383
+02/23/2020 13:33:24 PM - INFO - get_region_house_page finished.....
+02/23/2020 13:33:24 PM - INFO - extract_house_url_info start....
+02/23/2020 13:33:25 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 13:33:25 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 13:33:26 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 13:33:26 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 13:33:26 PM - INFO - 总共提取116个房屋url
+02/23/2020 13:33:26 PM - INFO - extract house url :1.0518641471862793
+02/23/2020 13:33:26 PM - INFO - extract_house_url_info finished....
+02/23/2020 13:40:21 PM - INFO - get house page :0.9976518154144287
+02/23/2020 13:40:21 PM - INFO - expand_region_url start......
+02/23/2020 13:40:24 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 13:40:24 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 13:40:24 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 13:40:24 PM - INFO - 总共4个页面
+02/23/2020 13:40:48 PM - INFO - get house page :0.77358078956604
+02/23/2020 13:40:48 PM - INFO - expand_region_url start......
+02/23/2020 13:40:51 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 13:40:51 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 13:40:52 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 13:40:52 PM - INFO - 总共4个页面
+02/23/2020 13:40:52 PM - INFO - get house page :4.355267286300659
+02/23/2020 13:40:52 PM - INFO - expand_region_url finished.....
+02/23/2020 13:40:52 PM - INFO - get_region_house_page start......
+02/23/2020 13:40:54 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:40:54 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:40:54 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:40:54 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:40:54 PM - INFO - 总共4个页面
+02/23/2020 13:40:54 PM - INFO - get house page :2.0225396156311035
+02/23/2020 13:40:54 PM - INFO - get_region_house_page finished.....
+02/23/2020 13:40:54 PM - INFO - extract_house_url_info start....
+02/23/2020 13:40:55 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 13:40:55 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 13:40:55 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 13:40:55 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 13:40:55 PM - INFO - 总共提取116个房屋url
+02/23/2020 13:40:55 PM - INFO - extract house url :1.0479180812835693
+02/23/2020 13:40:55 PM - INFO - extract_house_url_info finished....
+02/23/2020 13:59:26 PM - INFO - get house page :0.6341762542724609
+02/23/2020 13:59:26 PM - INFO - expand_region_url start......
+02/23/2020 13:59:29 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 13:59:30 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 13:59:30 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 13:59:30 PM - INFO - 总共4个页面
+02/23/2020 13:59:30 PM - INFO - get house page :3.918050765991211
+02/23/2020 13:59:30 PM - INFO - expand_region_url finished.....
+02/23/2020 13:59:30 PM - INFO - get_region_house_page start......
+02/23/2020 13:59:32 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 13:59:32 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 13:59:32 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 13:59:32 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 13:59:32 PM - INFO - 总共4个页面
+02/23/2020 14:01:35 PM - INFO - get house page :0.6327815055847168
+02/23/2020 14:01:35 PM - INFO - expand_region_url start......
+02/23/2020 14:01:38 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:01:38 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:01:39 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:01:39 PM - INFO - 总共4个页面
+02/23/2020 14:01:39 PM - INFO - get house page :3.805098295211792
+02/23/2020 14:01:39 PM - INFO - expand_region_url finished.....
+02/23/2020 14:01:39 PM - INFO - get_region_house_page start......
+02/23/2020 14:01:41 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:01:41 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:01:41 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:01:41 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:01:41 PM - INFO - 总共4个页面
+02/23/2020 14:02:19 PM - INFO - get house page :0.7946503162384033
+02/23/2020 14:02:19 PM - INFO - expand_region_url start......
+02/23/2020 14:02:22 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 14:02:23 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:02:23 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:02:23 PM - INFO - 总共4个页面
+02/23/2020 14:02:23 PM - INFO - get house page :3.676650047302246
+02/23/2020 14:02:23 PM - INFO - expand_region_url finished.....
+02/23/2020 14:02:23 PM - INFO - get_region_house_page start......
+02/23/2020 14:02:25 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:02:25 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:02:25 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:02:25 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:02:25 PM - INFO - 总共4个页面
+02/23/2020 14:03:34 PM - INFO - get house page :0.7529921531677246
+02/23/2020 14:03:34 PM - INFO - expand_region_url start......
+02/23/2020 14:03:38 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:03:38 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:03:38 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:03:38 PM - INFO - 总共4个页面
+02/23/2020 14:03:38 PM - INFO - get house page :4.121381044387817
+02/23/2020 14:03:38 PM - INFO - expand_region_url finished.....
+02/23/2020 14:03:38 PM - INFO - get_region_house_page start......
+02/23/2020 14:03:40 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:03:40 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:03:41 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:03:41 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:03:41 PM - INFO - 总共4个页面
+02/23/2020 14:05:45 PM - INFO - get house page :1.178349256515503
+02/23/2020 14:05:45 PM - INFO - expand_region_url start......
+02/23/2020 14:05:48 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 14:05:49 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:05:49 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:05:49 PM - INFO - 总共4个页面
+02/23/2020 14:05:49 PM - INFO - get house page :4.2864532470703125
+02/23/2020 14:05:49 PM - INFO - expand_region_url finished.....
+02/23/2020 14:05:49 PM - INFO - get_region_house_page start......
+02/23/2020 14:05:51 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:05:51 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:05:51 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:05:51 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:05:51 PM - INFO - 总共4个页面
+02/23/2020 14:06:42 PM - INFO - get house page :0.7881193161010742
+02/23/2020 14:06:42 PM - INFO - expand_region_url start......
+02/23/2020 14:06:45 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:06:45 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:06:46 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:06:46 PM - INFO - 总共4个页面
+02/23/2020 14:06:46 PM - INFO - get house page :3.7552614212036133
+02/23/2020 14:06:46 PM - INFO - expand_region_url finished.....
+02/23/2020 14:06:46 PM - INFO - get_region_house_page start......
+02/23/2020 14:06:47 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:06:48 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:06:48 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:06:48 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:06:48 PM - INFO - 总共4个页面
+02/23/2020 14:07:34 PM - INFO - get house page :0.7615325450897217
+02/23/2020 14:07:34 PM - INFO - expand_region_url start......
+02/23/2020 14:07:37 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:07:37 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:07:38 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:07:38 PM - INFO - 总共4个页面
+02/23/2020 14:07:38 PM - INFO - get house page :3.80912446975708
+02/23/2020 14:07:38 PM - INFO - expand_region_url finished.....
+02/23/2020 14:07:38 PM - INFO - get_region_house_page start......
+02/23/2020 14:07:40 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:07:40 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:07:40 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:07:40 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:07:40 PM - INFO - 总共4个页面
+02/23/2020 14:08:07 PM - INFO - get house page :0.7284641265869141
+02/23/2020 14:08:07 PM - INFO - expand_region_url start......
+02/23/2020 14:08:10 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:08:10 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:08:11 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:08:11 PM - INFO - 总共4个页面
+02/23/2020 14:08:11 PM - INFO - get house page :3.5973851680755615
+02/23/2020 14:08:11 PM - INFO - expand_region_url finished.....
+02/23/2020 14:08:11 PM - INFO - get_region_house_page start......
+02/23/2020 14:08:13 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:08:13 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:08:13 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:08:13 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:08:13 PM - INFO - 总共4个页面
+02/23/2020 14:09:49 PM - INFO - get house page :0.7420048713684082
+02/23/2020 14:09:49 PM - INFO - expand_region_url start......
+02/23/2020 14:09:53 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:09:53 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:09:53 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:09:53 PM - INFO - 总共4个页面
+02/23/2020 14:09:53 PM - INFO - get house page :3.960432291030884
+02/23/2020 14:09:53 PM - INFO - expand_region_url finished.....
+02/23/2020 14:09:53 PM - INFO - get_region_house_page start......
+02/23/2020 14:09:55 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:09:55 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:09:55 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:09:55 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:09:55 PM - INFO - 总共4个页面
+02/23/2020 14:11:04 PM - INFO - get house page :0.9029865264892578
+02/23/2020 14:11:04 PM - INFO - expand_region_url start......
+02/23/2020 14:11:07 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 14:11:08 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:11:08 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:11:08 PM - INFO - 总共4个页面
+02/23/2020 14:11:08 PM - INFO - get house page :3.760389804840088
+02/23/2020 14:11:08 PM - INFO - expand_region_url finished.....
+02/23/2020 14:11:08 PM - INFO - get_region_house_page start......
+02/23/2020 14:11:10 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:11:11 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:11:11 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:11:11 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:11:11 PM - INFO - 总共4个页面
+02/23/2020 14:12:00 PM - INFO - get house page :0.7894716262817383
+02/23/2020 14:12:00 PM - INFO - expand_region_url start......
+02/23/2020 14:12:03 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:12:04 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:12:04 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:12:04 PM - INFO - 总共4个页面
+02/23/2020 14:12:04 PM - INFO - get house page :4.043028116226196
+02/23/2020 14:12:04 PM - INFO - expand_region_url finished.....
+02/23/2020 14:12:04 PM - INFO - get_region_house_page start......
+02/23/2020 14:12:06 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:12:06 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:12:06 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:12:06 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:12:06 PM - INFO - 总共4个页面
+02/23/2020 14:13:08 PM - INFO - get house page :0.8285589218139648
+02/23/2020 14:13:08 PM - INFO - expand_region_url start......
+02/23/2020 14:13:11 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 14:13:12 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:13:12 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:13:12 PM - INFO - 总共4个页面
+02/23/2020 14:13:12 PM - INFO - get house page :3.650820255279541
+02/23/2020 14:13:12 PM - INFO - expand_region_url finished.....
+02/23/2020 14:13:12 PM - INFO - get_region_house_page start......
+02/23/2020 14:13:14 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:13:14 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:13:14 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:13:14 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:13:14 PM - INFO - 总共4个页面
+02/23/2020 14:13:55 PM - INFO - get house page :0.7793123722076416
+02/23/2020 14:13:55 PM - INFO - expand_region_url start......
+02/23/2020 14:13:58 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 14:13:58 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:13:59 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:13:59 PM - INFO - 总共4个页面
+02/23/2020 14:13:59 PM - INFO - get house page :3.6891427040100098
+02/23/2020 14:13:59 PM - INFO - expand_region_url finished.....
+02/23/2020 14:13:59 PM - INFO - get_region_house_page start......
+02/23/2020 14:14:00 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:14:00 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:14:00 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:14:00 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:14:00 PM - INFO - 总共4个页面
+02/23/2020 14:14:00 PM - INFO - get house page :1.9367344379425049
+02/23/2020 14:14:00 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:14:00 PM - INFO - extract_house_url_info start....
+02/23/2020 14:14:01 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:14:01 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:14:01 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:14:01 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:14:01 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:14:01 PM - INFO - extract house url :0.9844863414764404
+02/23/2020 14:14:01 PM - INFO - extract_house_url_info finished....
+02/23/2020 14:14:39 PM - INFO - get house page :0.6858117580413818
+02/23/2020 14:14:39 PM - INFO - expand_region_url start......
+02/23/2020 14:14:42 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:14:43 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:14:43 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:14:43 PM - INFO - 总共4个页面
+02/23/2020 14:14:43 PM - INFO - get house page :3.591031789779663
+02/23/2020 14:14:43 PM - INFO - expand_region_url finished.....
+02/23/2020 14:14:43 PM - INFO - get_region_house_page start......
+02/23/2020 14:14:45 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:14:45 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:14:45 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:14:45 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:14:45 PM - INFO - 总共4个页面
+02/23/2020 14:14:49 PM - INFO - get house page :6.098817586898804
+02/23/2020 14:14:49 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:14:49 PM - INFO - extract_house_url_info start....
+02/23/2020 14:14:50 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:14:50 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:14:50 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:14:50 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:14:50 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:14:50 PM - INFO - extract house url :1.0331149101257324
+02/23/2020 14:14:50 PM - INFO - extract_house_url_info finished....
+02/23/2020 14:15:35 PM - INFO - get house page :0.7657358646392822
+02/23/2020 14:15:35 PM - INFO - expand_region_url start......
+02/23/2020 14:15:38 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:15:39 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:15:39 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:15:39 PM - INFO - 总共4个页面
+02/23/2020 14:15:39 PM - INFO - get house page :3.555448293685913
+02/23/2020 14:15:39 PM - INFO - expand_region_url finished.....
+02/23/2020 14:15:39 PM - INFO - get_region_house_page start......
+02/23/2020 14:15:41 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:15:41 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:15:41 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:15:41 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:15:41 PM - INFO - 总共4个页面
+02/23/2020 14:15:44 PM - INFO - get house page :5.246118783950806
+02/23/2020 14:15:44 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:15:44 PM - INFO - extract_house_url_info start....
+02/23/2020 14:15:45 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:15:45 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:15:45 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:15:45 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:15:45 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:15:45 PM - INFO - extract house url :1.0631020069122314
+02/23/2020 14:15:45 PM - INFO - extract_house_url_info finished....
+02/23/2020 14:16:00 PM - INFO - get house page :0.6881117820739746
+02/23/2020 14:16:00 PM - INFO - expand_region_url start......
+02/23/2020 14:16:03 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:16:03 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:16:03 PM - DEBUG - __expand_region_url_task__ thread0: executor 6 task done
+02/23/2020 14:16:03 PM - INFO - 总共4个页面
+02/23/2020 14:16:03 PM - INFO - get house page :3.8205127716064453
+02/23/2020 14:16:03 PM - INFO - expand_region_url finished.....
+02/23/2020 14:16:03 PM - INFO - get_region_house_page start......
+02/23/2020 14:16:05 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:16:05 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:16:05 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:16:05 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:16:05 PM - INFO - 总共4个页面
+02/23/2020 14:16:09 PM - INFO - get house page :5.161156892776489
+02/23/2020 14:16:09 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:16:09 PM - INFO - extract_house_url_info start....
+02/23/2020 14:16:09 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:16:09 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:16:09 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:16:10 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:16:10 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:16:10 PM - INFO - extract house url :0.9524250030517578
+02/23/2020 14:16:10 PM - INFO - extract_house_url_info finished....
+02/23/2020 14:17:52 PM - INFO - get house page :0.798119306564331
+02/23/2020 14:17:52 PM - INFO - expand_region_url start......
+02/23/2020 14:17:56 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 14:17:56 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:17:56 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:17:56 PM - INFO - 总共4个页面
+02/23/2020 14:17:56 PM - INFO - get house page :3.8006410598754883
+02/23/2020 14:17:56 PM - INFO - expand_region_url finished.....
+02/23/2020 14:17:56 PM - INFO - get_region_house_page start......
+02/23/2020 14:17:58 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:17:58 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:17:58 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:17:58 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:17:58 PM - INFO - 总共4个页面
+02/23/2020 14:17:58 PM - INFO - get house page :2.0391476154327393
+02/23/2020 14:17:58 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:17:58 PM - INFO - extract_house_url_info start....
+02/23/2020 14:17:59 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:17:59 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:17:59 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:17:59 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:17:59 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:17:59 PM - INFO - extract house url :0.8659384250640869
+02/23/2020 14:17:59 PM - INFO - extract_house_url_info finished....
+02/23/2020 14:20:16 PM - INFO - get house page :0.755974531173706
+02/23/2020 14:20:16 PM - INFO - expand_region_url start......
+02/23/2020 14:20:19 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:20:19 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:20:19 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:20:19 PM - INFO - 总共4个页面
+02/23/2020 14:20:19 PM - INFO - get house page :3.7671220302581787
+02/23/2020 14:20:19 PM - INFO - expand_region_url finished.....
+02/23/2020 14:20:19 PM - INFO - get_region_house_page start......
+02/23/2020 14:20:21 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:20:21 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:20:21 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:20:21 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:20:21 PM - INFO - 总共4个页面
+02/23/2020 14:20:21 PM - INFO - get house page :2.0848100185394287
+02/23/2020 14:20:21 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:20:21 PM - INFO - extract_house_url_info start....
+02/23/2020 14:20:22 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:20:22 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:20:22 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:20:22 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:20:22 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:20:22 PM - INFO - extract house url :0.8995804786682129
+02/23/2020 14:20:22 PM - INFO - extract_house_url_info finished....
+02/23/2020 14:24:16 PM - INFO - get house page :0.8056974411010742
+02/23/2020 14:24:16 PM - INFO - expand_region_url start......
+02/23/2020 14:24:19 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 14:24:20 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:24:20 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:24:20 PM - INFO - 总共4个页面
+02/23/2020 14:24:52 PM - INFO - get house page :0.778914213180542
+02/23/2020 14:24:52 PM - INFO - expand_region_url start......
+02/23/2020 14:24:55 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:24:56 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:24:56 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:24:56 PM - INFO - 总共4个页面
+02/23/2020 14:25:37 PM - INFO - get house page :0.7313437461853027
+02/23/2020 14:25:37 PM - INFO - expand_region_url start......
+02/23/2020 14:25:41 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:25:41 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:25:41 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:25:41 PM - INFO - 总共4个页面
+02/23/2020 14:26:35 PM - INFO - get house page :0.7652099132537842
+02/23/2020 14:26:35 PM - INFO - expand_region_url start......
+02/23/2020 14:26:38 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:26:38 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:26:39 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:26:39 PM - INFO - 总共4个页面
+02/23/2020 14:27:23 PM - INFO - get house page :0.7369015216827393
+02/23/2020 14:27:23 PM - INFO - expand_region_url start......
+02/23/2020 14:27:26 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:27:27 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:27:27 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:27:27 PM - INFO - 总共4个页面
+02/23/2020 14:28:19 PM - INFO - get house page :0.9143352508544922
+02/23/2020 14:28:19 PM - INFO - expand_region_url start......
+02/23/2020 14:28:22 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:28:23 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:28:23 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:28:23 PM - INFO - 总共4个页面
+02/23/2020 14:31:20 PM - INFO - get house page :0.7211759090423584
+02/23/2020 14:31:20 PM - INFO - expand_region_url start......
+02/23/2020 14:31:23 PM - DEBUG - __expand_region_url_task__ thread1: executor 4 task done
+02/23/2020 14:31:24 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:31:24 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:31:24 PM - INFO - 总共4个页面
+02/23/2020 14:33:39 PM - INFO - get house page :0.7819194793701172
+02/23/2020 14:33:39 PM - INFO - expand_region_url start......
+02/23/2020 14:33:42 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 14:33:43 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:33:43 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:33:43 PM - INFO - 总共4个页面
+02/23/2020 14:34:13 PM - INFO - get house page :0.8097035884857178
+02/23/2020 14:34:13 PM - INFO - expand_region_url start......
+02/23/2020 14:34:16 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:34:17 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:34:17 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:34:17 PM - INFO - 总共4个页面
+02/23/2020 14:34:17 PM - INFO - get house page :3.704835891723633
+02/23/2020 14:34:17 PM - INFO - expand_region_url finished.....
+02/23/2020 14:34:17 PM - INFO - get_region_house_page start......
+02/23/2020 14:34:19 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:34:19 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:34:19 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:34:19 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:34:19 PM - INFO - 总共4个页面
+02/23/2020 14:34:19 PM - INFO - get house page :2.149095058441162
+02/23/2020 14:34:19 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:34:19 PM - INFO - extract_house_url_info start....
+02/23/2020 14:34:20 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:34:20 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:34:20 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:34:20 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:34:20 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:34:20 PM - INFO - extract house url :0.8691692352294922
+02/23/2020 14:34:20 PM - INFO - extract_house_url_info finished....
+02/23/2020 14:35:53 PM - INFO - get house page :0.8234741687774658
+02/23/2020 14:35:53 PM - INFO - expand_region_url start......
+02/23/2020 14:35:56 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:35:57 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:35:57 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:35:57 PM - INFO - 总共4个页面
+02/23/2020 14:35:57 PM - INFO - get house page :3.648770809173584
+02/23/2020 14:35:57 PM - INFO - expand_region_url finished.....
+02/23/2020 14:35:57 PM - INFO - get_region_house_page start......
+02/23/2020 14:35:59 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:35:59 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:35:59 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:35:59 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:35:59 PM - INFO - 总共4个页面
+02/23/2020 14:35:59 PM - INFO - get house page :1.989107370376587
+02/23/2020 14:35:59 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:35:59 PM - INFO - extract_house_url_info start....
+02/23/2020 14:36:00 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:36:00 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:36:00 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:36:00 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:36:00 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:36:00 PM - INFO - extract house url :0.8779525756835938
+02/23/2020 14:36:00 PM - INFO - extract_house_url_info finished....
+02/23/2020 14:36:22 PM - INFO - get house page :0.7538468837738037
+02/23/2020 14:36:22 PM - INFO - expand_region_url start......
+02/23/2020 14:36:25 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:36:26 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:36:26 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:36:26 PM - INFO - 总共4个页面
+02/23/2020 14:36:26 PM - INFO - get house page :3.4539053440093994
+02/23/2020 14:36:26 PM - INFO - expand_region_url finished.....
+02/23/2020 14:36:26 PM - INFO - get_region_house_page start......
+02/23/2020 14:36:27 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:36:27 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:36:27 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:36:28 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:36:28 PM - INFO - 总共4个页面
+02/23/2020 14:37:36 PM - INFO - get house page :0.8402879238128662
+02/23/2020 14:37:36 PM - INFO - expand_region_url start......
+02/23/2020 14:37:39 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
+02/23/2020 14:37:39 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:37:39 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
+02/23/2020 14:37:39 PM - INFO - 总共4个页面
+02/23/2020 14:37:39 PM - INFO - get house page :3.738388776779175
+02/23/2020 14:37:39 PM - INFO - expand_region_url finished.....
+02/23/2020 14:37:39 PM - INFO - get_region_house_page start......
+02/23/2020 14:37:41 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:37:41 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:37:41 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:37:41 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:37:41 PM - INFO - 总共4个页面
+02/23/2020 14:37:41 PM - INFO - get house page :2.0028061866760254
+02/23/2020 14:37:41 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:37:41 PM - INFO - extract_house_url_info start....
+02/23/2020 14:37:42 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:37:42 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:37:42 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:37:42 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:37:42 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:37:42 PM - INFO - extract house url :0.9427237510681152
+02/23/2020 14:37:42 PM - INFO - extract_house_url_info finished....
+02/23/2020 14:38:39 PM - INFO - get house page :0.785069465637207
+02/23/2020 14:38:39 PM - INFO - expand_region_url start......
+02/23/2020 14:38:42 PM - DEBUG - __expand_region_url_task__ thread2: executor 4 task done
+02/23/2020 14:38:43 PM - DEBUG - __expand_region_url_task__ thread0: executor 5 task done
+02/23/2020 14:38:43 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
+02/23/2020 14:38:43 PM - INFO - 总共4个页面
+02/23/2020 14:38:43 PM - INFO - get house page :3.5514488220214844
+02/23/2020 14:38:43 PM - INFO - expand_region_url finished.....
+02/23/2020 14:38:43 PM - INFO - get_region_house_page start......
+02/23/2020 14:38:45 PM - DEBUG - get house page thread0: executor 1 task done
+02/23/2020 14:38:45 PM - DEBUG - get house page thread3: executor 1 task done
+02/23/2020 14:38:45 PM - DEBUG - get house page thread1: executor 1 task done
+02/23/2020 14:38:45 PM - DEBUG - get house page thread2: executor 1 task done
+02/23/2020 14:38:45 PM - INFO - 总共4个页面
+02/23/2020 14:38:45 PM - INFO - get house page :1.9237754344940186
+02/23/2020 14:38:45 PM - INFO - get_region_house_page finished.....
+02/23/2020 14:38:45 PM - INFO - extract_house_url_info start....
+02/23/2020 14:38:46 PM - DEBUG - extract house url thread1: executor 1 task done
+02/23/2020 14:38:46 PM - DEBUG - extract house url thread3: executor 1 task done
+02/23/2020 14:38:46 PM - DEBUG - extract house url thread0: executor 1 task done
+02/23/2020 14:38:46 PM - DEBUG - extract house url thread2: executor 1 task done
+02/23/2020 14:38:46 PM - INFO - 总共提取116个房屋url
+02/23/2020 14:38:46 PM - INFO - extract house url :0.7121546268463135
+02/23/2020 14:38:46 PM - INFO - extract_house_url_info finished....

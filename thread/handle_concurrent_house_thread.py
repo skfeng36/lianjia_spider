@@ -15,6 +15,7 @@ class ConcurrentGetHouseThread(threading.Thread):
     def __init__(self,name,exe_path,house_name,debug,config,log):
         
         threading.Thread.__init__(self)
+        self.config=config
         self.name=name
         self.current_hander=concurrent_request.ConcurrentHander(exe_path,house_name,0,config=config,log=log)
         self.exe_path=exe_path
@@ -75,8 +76,9 @@ class ConcurrentGetHouseThread(threading.Thread):
             end=time.time()
             total_time=end-start
             self.log.info(total_time)
-            analyse_house=analyse.AnalyseHouse(self.current_hander.house_detail_info_queue)
-            analyse_house.output_house_info(self.exe_path+'/file/house.csv')
-            house_csv2html=csv2html.CSV2HTML(self.exe_path+'/file/house.csv')
+            analyse_house=analyse.AnalyseHouse(self.current_hander.house_detail_info_queue,self.config)
+            analyse_house.output_house_info()
+
+            house_csv2html=csv2html.CSV2HTML(analyse_house.house_output_file_name)
             house_csv2html.to_html_file()
             time.sleep(self.request_time_interval)

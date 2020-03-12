@@ -8,10 +8,10 @@ import time
 from  hander import analyse
 import configparser
 from util import csv2html
-from net import http_server
+from net import http_server_monitor
 from http.server import HTTPServer,BaseHTTPRequestHandler
-from thread import handle_house_thread
-from thread import handle_concurrent_house_thread
+from thread import handle_house_spider_monitor
+from thread import handle_house_spider_thread
 import  signal
 from util import signal_handle
 from util import logging_handle
@@ -20,22 +20,24 @@ import logging
 if __name__ == '__main__':
 
     exe_path=sys.path[0]
-    #house_name='泾渭上城'
-    house_name='缤纷南郡'
+
+    root_url='https://xa.lianjia.com/ershoufang/'
 
     concurrent=True
     config=configparser.ConfigParser()
     config.read(exe_path+'/conf/config.ini')
+    config.set('file','exe_path',exe_path)
+
 
     signal_handler=signal_handle.SignalHandle(signal.SIG_IGN)
-    log=logging_handle.Log(exe_path,logging.INFO).loger()
+    log=logging_handle.Log(exe_path,logging.DEBUG).loger()
 
     
-    concurrent_house_thread=handle_concurrent_house_thread.ConcurrentGetHouseThread('concurrent_get_house',exe_path,house_name,0,config=config,log=log)
+    concurrent_house_thread=handle_house_spider_thread.ConcurrentGetHouseThread('concurrent_get_house',root_url,0,config=config,log=log)
     concurrent_house_thread.start()
-    house_server_thread=handle_house_thread.HouseServerThread('server',exe_path+'/file/house.html',exe_path+'/page/index.html',log)
-    house_server_thread.start()
-    house_server_thread.join()
+    #house_server_thread=handle_house_spider_monitor.HouseServerThread('server_monitor',exe_path+'/file/house.html',exe_path+'/page/index.html',log,config)
+    #house_server_thread.start()
+    #house_server_thread.join()
     concurrent_house_thread.join()
 
 

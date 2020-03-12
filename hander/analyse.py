@@ -10,12 +10,17 @@ class AnalyseHouse:
     analyse house informations from the website.
     '''
 
-    def __init__(self,house_detail_info_queue):
+    def __init__(self,house_detail_info_queue,config):
         self.house_detail_info_queue=house_detail_info_queue
         self.house_detail_info_list=[]
         while not self.house_detail_info_queue.empty():
             house=self.house_detail_info_queue.get()
             self.house_detail_info_list.append(house)
+            self.neighborhood_id=house.neighborhood_id
+        self.config=config
+        
+        exe_path=self.config.get('file','exe_path')
+        self.house_output_file_name=exe_path+'/file/'+self.neighborhood_id+'.csv'
         
 
     def __sort_by_area__(self,elem):
@@ -31,12 +36,12 @@ class AnalyseHouse:
         return float(elem.house_detail.total_price)
 
 
-    def output_house_info(self,file_name):
+    def output_house_info(self):
         '''
         output
         '''
-
-        with open(file_name,'w') as f:
+        
+        with open(self.house_output_file_name,'w') as f:
             out_csv=csv.writer(f)
             self.house_detail_info_list.sort(key=self.__sort_by_total_price__)
             out_csv.writerow(['序号','房屋编号','面积','总价','装修情况','均价','发布时间','关注人数'])
