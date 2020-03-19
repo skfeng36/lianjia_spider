@@ -21,9 +21,8 @@ class ConcurrentHander :
     def __init__(self,root_url,debug,config,log):
 
         self.config=config
-        
         self.exe_path=self.config.get('file','exe_path')
-        
+        self.root_flie_dir=self.config.get('dir','root_file_dir')
         self.root_url=root_url
         self.region_url_queue=queue.Queue()
         self.region_expand_url_queue=queue.Queue()
@@ -123,7 +122,7 @@ class ConcurrentHander :
             return False 
         self.house_url_queue.join()
         self.log.info('总共下载{}个房屋详情页'.format(size))
-        file_name=self.exe_path+'/file/city/xian/region/'+self.house_url_detail_page_list[0].region+'/url_detail_page'
+        file_name=self.root_flie_dir+'/file/city/xian/region/'+self.house_url_detail_page_list[0].region+'/url_detail_page'
     
         self.__mkdir___(file_name)
         
@@ -238,7 +237,7 @@ class ConcurrentHander :
                         return ret       
         self.region_page_content_queue.join()
         self.log.info('总共提取{}个房屋url'.format(self.house_url_queue.qsize()))
-        file_name=self.exe_path+'/file/city/xian/region/'+self.house_url_list[0][2]
+        file_name=self.root_flie_dir+'/file/city/xian/region/'+self.house_url_list[0][2]
     
         self.__mkdir___(file_name)
         file_name=file_name+'/'+self.house_url_list[0][2]+'_url.csv'
@@ -322,7 +321,7 @@ class ConcurrentHander :
         self.log.info('总共{}个页面'.format(size))
         if size==0:
             return False
-        file_name=self.exe_path+'/file/city/xian/region/'+self.region_expand_url_list[0][0]+'/page'
+        file_name=self.root_flie_dir+'/file/city/xian/region/'+self.region_expand_url_list[0][0]+'/page'
         self.region_expand_url_list.clear()
         self.__mkdir___(file_name)
     
@@ -352,7 +351,7 @@ class ConcurrentHander :
         extract all href of house page from tag of bigImgList 
         '''
         
-        if data[0]!='gaoling1':
+        if data[0]!='lintong':
             return
         
         soup=BeautifulSoup(page,'lxml')
@@ -428,7 +427,7 @@ class ConcurrentHander :
         self.log.info('总共{}个页面'.format(size))
         if size==0:
             return False
-        file_name=self.exe_path+'/file/city/xian/region/'+self.region_expand_url_list[0][0]
+        file_name=self.root_flie_dir+'/file/city/xian/region/'+self.region_expand_url_list[0][0]
         
         self.__mkdir___(file_name)
         file_name=file_name+'/'+self.region_expand_url_list[0][0]+'.csv'

@@ -5,7 +5,6 @@ from hander import extract_page_data
 from concurrent_hander import concurrent_request
 import sys
 import time
-from  hander import analyse
 import configparser
 from util import csv2html
 from net import http_server_monitor

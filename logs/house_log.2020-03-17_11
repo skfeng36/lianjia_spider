@@ -1,0 +1,554 @@
+03/17/2020 10:08:08 AM - DEBUG - get house page thread1: executor 1 task done
+03/17/2020 10:08:09 AM - DEBUG - get house page thread5: executor 1 task done
+03/17/2020 10:08:09 AM - DEBUG - get house page thread4: executor 1 task done
+03/17/2020 10:08:09 AM - DEBUG - get house page thread0: executor 1 task done
+03/17/2020 10:08:09 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 10:08:09 AM - DEBUG - get house page thread6: executor 1 task done
+03/17/2020 10:08:09 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:08:09 AM - INFO - 总共提取7个房屋
+03/17/2020 10:08:09 AM - INFO - extract house url :2.0215373039245605
+03/17/2020 10:35:37 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:35:37 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 10:35:37 AM - DEBUG - get house page thread0: executor 1 task done
+03/17/2020 10:35:38 AM - DEBUG - get house page thread6: executor 1 task done
+03/17/2020 10:35:38 AM - DEBUG - get house page thread5: executor 1 task done
+03/17/2020 10:35:38 AM - DEBUG - get house page thread1: executor 1 task done
+03/17/2020 10:35:38 AM - DEBUG - get house page thread4: executor 1 task done
+03/17/2020 10:35:38 AM - INFO - 总共提取7个房屋
+03/17/2020 10:35:38 AM - INFO - extract house url :1.8792564868927002
+03/17/2020 10:36:15 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:36:15 AM - DEBUG - get house page thread1: executor 1 task done
+03/17/2020 10:36:15 AM - DEBUG - get house page thread5: executor 1 task done
+03/17/2020 10:36:16 AM - DEBUG - get house page thread0: executor 1 task done
+03/17/2020 10:36:16 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 10:36:16 AM - DEBUG - get house page thread6: executor 1 task done
+03/17/2020 10:36:16 AM - DEBUG - get house page thread4: executor 1 task done
+03/17/2020 10:36:16 AM - INFO - 总共提取7个房屋
+03/17/2020 10:36:16 AM - INFO - extract house url :1.881178379058838
+03/17/2020 10:36:16 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 10:36:16 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 10:36:17 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 10:36:17 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 10:36:17 AM - INFO - extract house detail :0.5074918270111084
+03/17/2020 10:38:22 AM - DEBUG - get house page thread1: executor 1 task done
+03/17/2020 10:38:22 AM - DEBUG - get house page thread0: executor 6 task done
+03/17/2020 10:39:36 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 10:39:36 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 10:39:36 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:39:36 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 10:40:42 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 10:40:42 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:40:42 AM - DEBUG - get house page thread1: executor 3 task done
+03/17/2020 10:43:25 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 10:43:25 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 10:43:25 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 10:43:25 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:43:25 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 10:43:25 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 10:43:26 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 10:43:26 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 10:43:26 AM - INFO - extract house detail :0.6862339973449707
+03/17/2020 10:44:30 AM - DEBUG - get house page thread1: executor 3 task done
+03/17/2020 10:44:30 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:44:30 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 10:44:31 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 10:44:31 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 10:44:31 AM - INFO - extract house detail :0.48394298553466797
+03/17/2020 10:45:23 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 10:45:23 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:45:23 AM - DEBUG - get house page thread0: executor 4 task done
+03/17/2020 10:45:23 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 10:45:23 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 10:45:23 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 10:45:23 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 10:45:24 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 10:45:24 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 10:45:24 AM - INFO - extract house detail :0.4735989570617676
+03/17/2020 10:45:45 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:45:45 AM - DEBUG - get house page thread1: executor 3 task done
+03/17/2020 10:45:45 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 10:45:45 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 10:45:45 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 10:45:45 AM - INFO - extract house detail :0.4808084964752197
+03/17/2020 10:57:46 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 10:57:46 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 10:57:46 AM - DEBUG - get house page thread0: executor 4 task done
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 10:57:47 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 10:57:47 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 10:57:47 AM - INFO - extract house detail :0.48819780349731445
+03/17/2020 11:03:35 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:03:35 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:03:35 AM - DEBUG - get house page thread1: executor 1 task done
+03/17/2020 11:03:35 AM - DEBUG - get house page thread3: executor 2 task done
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:03:36 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:03:36 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:03:36 AM - INFO - extract house detail :0.6841750144958496
+03/17/2020 11:13:38 AM - DEBUG - get house page thread1: executor 1 task done
+03/17/2020 11:13:38 AM - DEBUG - get house page thread4: executor 1 task done
+03/17/2020 11:13:38 AM - DEBUG - get house page thread2: executor 2 task done
+03/17/2020 11:13:38 AM - DEBUG - get house page thread0: executor 2 task done
+03/17/2020 11:13:38 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:13:39 AM - DEBUG - 4 generated an exception: string indices must be integers
+03/17/2020 11:13:39 AM - DEBUG - 2 generated an exception: string indices must be integers
+03/17/2020 11:13:39 AM - DEBUG - 3 generated an exception: string indices must be integers
+03/17/2020 11:13:39 AM - DEBUG - 1 generated an exception: string indices must be integers
+03/17/2020 11:13:39 AM - DEBUG - 5 generated an exception: string indices must be integers
+03/17/2020 11:13:39 AM - DEBUG - 0 generated an exception: string indices must be integers
+03/17/2020 11:13:39 AM - DEBUG - 6 generated an exception: string indices must be integers
+03/17/2020 11:13:39 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:13:39 AM - INFO - extract house detail :0.7022647857666016
+03/17/2020 11:14:14 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:14:14 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:14:14 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:14:14 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:14:15 AM - DEBUG - 3 generated an exception: string indices must be integers
+03/17/2020 11:14:15 AM - DEBUG - 5 generated an exception: string indices must be integers
+03/17/2020 11:14:15 AM - DEBUG - 1 generated an exception: string indices must be integers
+03/17/2020 11:14:15 AM - DEBUG - 2 generated an exception: string indices must be integers
+03/17/2020 11:14:15 AM - DEBUG - 6 generated an exception: string indices must be integers
+03/17/2020 11:14:15 AM - DEBUG - 4 generated an exception: string indices must be integers
+03/17/2020 11:14:15 AM - DEBUG - 0 generated an exception: string indices must be integers
+03/17/2020 11:14:15 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:14:15 AM - INFO - extract house detail :0.6705431938171387
+03/17/2020 11:14:44 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:14:44 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:14:44 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:14:44 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:14:44 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:14:44 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:14:44 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:14:44 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:14:45 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:14:45 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:14:45 AM - INFO - extract house detail :0.70577073097229
+03/17/2020 11:14:58 AM - DEBUG - get house page thread0: executor 2 task done
+03/17/2020 11:14:58 AM - DEBUG - get house page thread1: executor 3 task done
+03/17/2020 11:14:58 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:14:58 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:14:58 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:14:58 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:14:58 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:14:58 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:14:58 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:14:58 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:14:59 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:14:59 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:14:59 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:14:59 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:14:59 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:14:59 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:14:59 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:14:59 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:14:59 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:14:59 AM - INFO - extract house detail :0.5092020034790039
+03/17/2020 11:15:49 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:15:49 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:15:49 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:15:49 AM - DEBUG - get house page thread0: executor 2 task done
+03/17/2020 11:15:49 AM - DEBUG - get house page thread4: executor 1 task done
+03/17/2020 11:15:50 AM - DEBUG - 0 generated an exception: string indices must be integers
+03/17/2020 11:15:50 AM - DEBUG - 2 generated an exception: string indices must be integers
+03/17/2020 11:15:50 AM - DEBUG - 6 generated an exception: string indices must be integers
+03/17/2020 11:15:50 AM - DEBUG - 3 generated an exception: string indices must be integers
+03/17/2020 11:15:50 AM - DEBUG - 1 generated an exception: string indices must be integers
+03/17/2020 11:15:50 AM - DEBUG - 4 generated an exception: string indices must be integers
+03/17/2020 11:15:50 AM - DEBUG - 5 generated an exception: string indices must be integers
+03/17/2020 11:15:50 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:15:50 AM - INFO - extract house detail :0.6761679649353027
+03/17/2020 11:16:08 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:16:08 AM - DEBUG - get house page thread0: executor 2 task done
+03/17/2020 11:16:08 AM - DEBUG - get house page thread2: executor 2 task done
+03/17/2020 11:16:08 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:16:09 AM - DEBUG - 0 generated an exception: string indices must be integers
+03/17/2020 11:16:09 AM - DEBUG - 2 generated an exception: string indices must be integers
+03/17/2020 11:16:09 AM - DEBUG - 3 generated an exception: string indices must be integers
+03/17/2020 11:16:09 AM - DEBUG - 1 generated an exception: string indices must be integers
+03/17/2020 11:16:09 AM - DEBUG - 5 generated an exception: string indices must be integers
+03/17/2020 11:16:09 AM - DEBUG - 4 generated an exception: string indices must be integers
+03/17/2020 11:16:09 AM - DEBUG - 6 generated an exception: string indices must be integers
+03/17/2020 11:16:09 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:16:09 AM - INFO - extract house detail :0.6930232048034668
+03/17/2020 11:16:30 AM - DEBUG - get house page thread1: executor 1 task done
+03/17/2020 11:16:30 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:16:30 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:16:30 AM - DEBUG - get house page thread2: executor 2 task done
+03/17/2020 11:16:30 AM - DEBUG - 1 generated an exception: string indices must be integers
+03/17/2020 11:16:30 AM - DEBUG - 5 generated an exception: string indices must be integers
+03/17/2020 11:16:30 AM - DEBUG - 3 generated an exception: string indices must be integers
+03/17/2020 11:16:31 AM - DEBUG - 6 generated an exception: string indices must be integers
+03/17/2020 11:16:31 AM - DEBUG - 2 generated an exception: string indices must be integers
+03/17/2020 11:16:31 AM - DEBUG - 4 generated an exception: string indices must be integers
+03/17/2020 11:16:31 AM - DEBUG - 0 generated an exception: string indices must be integers
+03/17/2020 11:16:31 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:16:31 AM - INFO - extract house detail :0.6739351749420166
+03/17/2020 11:21:36 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:21:36 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:21:36 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:21:36 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:21:37 AM - DEBUG - 6 generated an exception: string indices must be integers
+03/17/2020 11:21:37 AM - DEBUG - 1 generated an exception: string indices must be integers
+03/17/2020 11:21:37 AM - DEBUG - 5 generated an exception: string indices must be integers
+03/17/2020 11:21:37 AM - DEBUG - 2 generated an exception: string indices must be integers
+03/17/2020 11:21:37 AM - DEBUG - 4 generated an exception: string indices must be integers
+03/17/2020 11:21:37 AM - DEBUG - 3 generated an exception: string indices must be integers
+03/17/2020 11:21:37 AM - DEBUG - 0 generated an exception: string indices must be integers
+03/17/2020 11:21:37 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:21:37 AM - INFO - extract house detail :0.6790518760681152
+03/17/2020 11:21:54 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:21:54 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:21:54 AM - DEBUG - get house page thread1: executor 3 task done
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:21:54 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:21:54 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:21:54 AM - INFO - extract house detail :0.5976357460021973
+03/17/2020 11:22:28 AM - DEBUG - get house page thread0: executor 7 task done
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:22:29 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:22:29 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:22:29 AM - INFO - extract house detail :0.5062158107757568
+03/17/2020 11:23:09 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:23:09 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:23:09 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:23:09 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:23:09 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:23:09 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:23:09 AM - INFO - extract house detail :0.4869809150695801
+03/17/2020 11:24:12 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:24:12 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:24:12 AM - DEBUG - get house page thread1: executor 1 task done
+03/17/2020 11:24:12 AM - DEBUG - get house page thread2: executor 2 task done
+03/17/2020 11:27:18 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:27:18 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:27:18 AM - DEBUG - get house page thread0: executor 2 task done
+03/17/2020 11:27:18 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:27:18 AM - DEBUG - get house page thread4: executor 1 task done
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:27:18 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:27:18 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:27:18 AM - INFO - extract house detail :0.679145336151123
+03/17/2020 11:28:55 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:28:55 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:28:55 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:28:55 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:28:55 AM - DEBUG - 0 extract_house_detail generated an exception: local variable 'div' referenced before assignment
+03/17/2020 11:28:55 AM - DEBUG - 3 extract_house_detail generated an exception: local variable 'div' referenced before assignment
+03/17/2020 11:28:55 AM - DEBUG - 1 extract_house_detail generated an exception: local variable 'div' referenced before assignment
+03/17/2020 11:28:55 AM - DEBUG - 4 extract_house_detail generated an exception: local variable 'div' referenced before assignment
+03/17/2020 11:28:55 AM - DEBUG - 6 extract_house_detail generated an exception: local variable 'div' referenced before assignment
+03/17/2020 11:28:55 AM - DEBUG - 5 extract_house_detail generated an exception: local variable 'div' referenced before assignment
+03/17/2020 11:28:55 AM - DEBUG - 2 extract_house_detail generated an exception: local variable 'div' referenced before assignment
+03/17/2020 11:28:55 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:28:55 AM - INFO - extract house detail :0.6392858028411865
+03/17/2020 11:29:30 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:29:30 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:29:30 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:29:30 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:29:31 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:29:31 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:29:31 AM - INFO - extract house detail :0.7186024188995361
+03/17/2020 11:31:29 AM - DEBUG - get house page thread0: executor 5 task done
+03/17/2020 11:31:29 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:31:29 AM - DEBUG - get house page thread1: executor 1 task done
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:31:29 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:31:29 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:31:29 AM - INFO - extract house detail :0.5146806240081787
+03/17/2020 11:33:09 AM - DEBUG - get house page thread0: executor 2 task done
+03/17/2020 11:33:09 AM - DEBUG - get house page thread1: executor 3 task done
+03/17/2020 11:33:09 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:33:09 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:33:10 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:33:10 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:33:10 AM - INFO - extract house detail :0.4903583526611328
+03/17/2020 11:34:28 AM - DEBUG - get house page thread0: executor 4 task done
+03/17/2020 11:34:28 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:34:28 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:34:28 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:34:28 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:34:28 AM - INFO - extract house detail :0.5242328643798828
+03/17/2020 11:36:13 AM - DEBUG - get house page thread0: executor 4 task done
+03/17/2020 11:36:13 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:36:13 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:36:13 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:36:13 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:36:13 AM - INFO - extract house detail :0.5168778896331787
+03/17/2020 11:37:15 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:37:15 AM - DEBUG - get house page thread0: executor 2 task done
+03/17/2020 11:37:15 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:37:15 AM - DEBUG - get house page thread2: executor 2 task done
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:37:15 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:37:15 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:37:15 AM - INFO - extract house detail :0.7195415496826172
+03/17/2020 11:37:47 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:37:47 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:37:47 AM - DEBUG - get house page thread1: executor 3 task done
+03/17/2020 11:37:47 AM - DEBUG - extract house detail thread1:executor 1 task
+03/17/2020 11:37:47 AM - DEBUG - extract house detail thread:1 is done
+03/17/2020 11:37:47 AM - DEBUG - extract house detail thread0:executor 1 task
+03/17/2020 11:37:47 AM - DEBUG - extract house detail thread:0 is done
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread6:executor 1 task
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread:6 is done
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread4:executor 1 task
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread:4 is done
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread3:executor 1 task
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread2:executor 1 task
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread5:executor 1 task
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread:3 is done
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread:2 is done
+03/17/2020 11:37:48 AM - DEBUG - extract house detail thread:5 is done
+03/17/2020 11:37:48 AM - INFO - 总共提取7个房屋详细信息
+03/17/2020 11:37:48 AM - INFO - extract house detail :0.4993133544921875
+03/17/2020 11:38:39 AM - DEBUG - get house page thread2: executor 1 task done
+03/17/2020 11:38:39 AM - DEBUG - get house page thread0: executor 4 task done
+03/17/2020 11:38:39 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:38:40 AM - DEBUG - 3 extract_house_detail generated an exception: string indices must be integers
+03/17/2020 11:38:40 AM - DEBUG - 1 extract_house_detail generated an exception: string indices must be integers
+03/17/2020 11:38:40 AM - DEBUG - 6 extract_house_detail generated an exception: string indices must be integers
+03/17/2020 11:38:40 AM - DEBUG - 5 extract_house_detail generated an exception: string indices must be integers
+03/17/2020 11:38:40 AM - DEBUG - 4 extract_house_detail generated an exception: string indices must be integers
+03/17/2020 11:38:40 AM - DEBUG - 0 extract_house_detail generated an exception: string indices must be integers
+03/17/2020 11:38:40 AM - DEBUG - 2 extract_house_detail generated an exception: string indices must be integers
+03/17/2020 11:38:40 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:38:40 AM - INFO - extract house detail :0.6603090763092041
+03/17/2020 11:40:10 AM - DEBUG - get house page thread0: executor 3 task done
+03/17/2020 11:40:10 AM - DEBUG - get house page thread1: executor 4 task done
+03/17/2020 11:40:10 AM - DEBUG - 1 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:10 AM - DEBUG - 3 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:10 AM - DEBUG - 2 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:11 AM - DEBUG - 5 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:11 AM - DEBUG - 4 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:11 AM - DEBUG - 6 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:11 AM - DEBUG - 0 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:11 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:40:11 AM - INFO - extract house detail :0.5181877613067627
+03/17/2020 11:40:27 AM - DEBUG - get house page thread0: executor 2 task done
+03/17/2020 11:40:27 AM - DEBUG - get house page thread1: executor 2 task done
+03/17/2020 11:40:27 AM - DEBUG - get house page thread2: executor 2 task done
+03/17/2020 11:40:27 AM - DEBUG - get house page thread3: executor 1 task done
+03/17/2020 11:40:27 AM - DEBUG - 2 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:27 AM - DEBUG - 1 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:27 AM - DEBUG - 4 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:27 AM - DEBUG - 5 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:27 AM - DEBUG - 0 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:27 AM - DEBUG - 6 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:27 AM - DEBUG - 3 extract_house_detail generated an exception: local variable 'dt' referenced before assignment
+03/17/2020 11:40:27 AM - INFO - 总共提取0个房屋详细信息
+03/17/2020 11:40:27 AM - INFO - extract house detail :0.6543083190917969

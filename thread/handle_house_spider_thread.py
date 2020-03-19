@@ -7,7 +7,6 @@ from net import http_server_monitor
 from http.server import HTTPServer,BaseHTTPRequestHandler
 from util import csv2html
 from concurrent_hander import spider_house
-from hander import analyse
 from util import csv2html
 
 import time

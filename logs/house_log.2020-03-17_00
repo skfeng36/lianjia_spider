@@ -1,0 +1,27 @@
+03/17/2020 00:41:09 AM - DEBUG - extract house url thread0: executor 1 task done
+03/17/2020 00:41:09 AM - DEBUG - extract house url thread6: executor 1 task done
+03/17/2020 00:41:09 AM - DEBUG - extract house url thread5: executor 1 task done
+03/17/2020 00:41:09 AM - DEBUG - extract house url thread3: executor 1 task done
+03/17/2020 00:41:09 AM - DEBUG - extract house url thread2: executor 1 task done
+03/17/2020 00:41:09 AM - DEBUG - extract house url thread1: executor 1 task done
+03/17/2020 00:41:09 AM - DEBUG - extract house url thread4: executor 1 task done
+03/17/2020 00:41:09 AM - INFO - 总共提取0个房屋url
+03/17/2020 00:41:09 AM - INFO - extract house url :1.2852754592895508
+03/17/2020 00:43:49 AM - DEBUG - extract house url thread5: executor 1 task done
+03/17/2020 00:43:49 AM - DEBUG - extract house url thread0: executor 1 task done
+03/17/2020 00:43:49 AM - DEBUG - extract house url thread3: executor 1 task done
+03/17/2020 00:43:49 AM - DEBUG - extract house url thread1: executor 1 task done
+03/17/2020 00:43:49 AM - DEBUG - extract house url thread2: executor 1 task done
+03/17/2020 00:43:49 AM - DEBUG - extract house url thread6: executor 1 task done
+03/17/2020 00:43:49 AM - DEBUG - extract house url thread4: executor 1 task done
+03/17/2020 00:43:49 AM - INFO - 总共提取7个房屋url
+03/17/2020 00:43:49 AM - INFO - extract house url :0.9316854476928711
+03/17/2020 00:44:42 AM - DEBUG - extract house url thread2: executor 1 task done
+03/17/2020 00:44:42 AM - DEBUG - extract house url thread1: executor 1 task done
+03/17/2020 00:44:42 AM - DEBUG - extract house url thread6: executor 1 task done
+03/17/2020 00:44:42 AM - DEBUG - extract house url thread4: executor 1 task done
+03/17/2020 00:44:42 AM - DEBUG - extract house url thread3: executor 1 task done
+03/17/2020 00:44:42 AM - DEBUG - extract house url thread0: executor 1 task done
+03/17/2020 00:44:42 AM - DEBUG - extract house url thread5: executor 1 task done
+03/17/2020 00:44:43 AM - INFO - 总共提取7个房屋
+03/17/2020 00:44:43 AM - INFO - extract house url :1.1527020931243896

@@ -1,0 +1,72 @@
+03/18/2020 07:52:37 AM - INFO - get_house_file start......
+03/18/2020 07:52:37 AM - INFO - get_house_file finished.....
+03/18/2020 07:52:37 AM - INFO - construct_house_infos start......
+03/18/2020 07:52:41 AM - DEBUG - get house page thread9: executor 144 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread12: executor 146 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread18: executor 128 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread19: executor 130 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread3: executor 132 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread5: executor 134 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread10: executor 142 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread0: executor 137 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread14: executor 134 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread1: executor 140 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread2: executor 150 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread4: executor 138 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread13: executor 150 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread11: executor 146 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread7: executor 137 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread17: executor 127 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread15: executor 135 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread16: executor 135 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread8: executor 144 task done
+03/18/2020 07:52:41 AM - DEBUG - get house page thread6: executor 147 task done
+03/18/2020 07:52:41 AM - INFO - 总共提取2776个房屋
+03/18/2020 07:52:41 AM - INFO - extract house url :4.119912624359131
+03/18/2020 07:52:41 AM - INFO - construct_house_infos finished......
+03/18/2020 07:52:41 AM - INFO - extract_house_detail start......
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread12:executor 138 task
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread16:executor 138 task
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread13:executor 140 task
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread:12 is done
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread:16 is done
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread:13 is done
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread3:executor 139 task
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread:3 is done
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread9:executor 139 task
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread10:executor 139 task
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread:9 is done
+03/18/2020 07:57:45 AM - DEBUG - extract house detail thread:10 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread8:executor 138 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:8 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread0:executor 140 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:0 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread11:executor 138 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:11 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread15:executor 141 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:15 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread14:executor 138 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:14 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread17:executor 139 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:17 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread18:executor 138 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:18 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread19:executor 138 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:19 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread6:executor 140 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:6 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread2:executor 139 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:2 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread5:executor 139 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:5 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread7:executor 139 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:7 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread4:executor 139 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:4 is done
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread1:executor 137 task
+03/18/2020 07:57:46 AM - DEBUG - extract house detail thread:1 is done
+03/18/2020 07:57:46 AM - INFO - 总共提取2776个房屋详细信息
+03/18/2020 07:57:46 AM - INFO - extract house detail :304.44143199920654
+03/18/2020 07:57:46 AM - INFO - extract_house_detail finished......
+03/18/2020 07:57:46 AM - INFO - reduce start......
+03/18/2020 07:57:46 AM - INFO - reduce finished......

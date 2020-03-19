@@ -3,7 +3,7 @@ handle_house_thread module handles http request.
 '''
 
 import threading
-from net import http_server
+from net import http_server_monitor
 from http.server import HTTPServer,BaseHTTPRequestHandler
 from util import csv2html
 import os
@@ -35,7 +35,7 @@ class HouseServerThread(threading.Thread):
         self.router=http_router.Router(self.config)
         self.html_data=HtmlData(self.config,self.router)
 
-        self.RequestHouseInfoHandler=http_server.make_request_house_info_handler(self.html_data)
+        self.RequestHouseInfoHandler=http_server_monitor.make_request_house_info_handler(self.html_data)
         self.stop=False
         self.version=0
         self.setDaemon(True)

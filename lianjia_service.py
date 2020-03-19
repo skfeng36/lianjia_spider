@@ -4,7 +4,6 @@ import sys
 import time
 import configparser
 from util import csv2html
-from net import http_server
 from http.server import HTTPServer,BaseHTTPRequestHandler
 from thread import handle_house_service_thread
 import  signal
