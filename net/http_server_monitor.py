@@ -31,9 +31,8 @@ def make_request_house_info_handler(html_data):
             page_name=self.__mapping_request__(request_path)
             
             exe_path=html_data.config.get('file','exe_path')
-
             try:
-                with open(exe_path+'/file/'+page_name+'.html') as input_file:
+                with open(page_name) as input_file:
                     html_data.content=input_file.read()
                     
             except Exception as exc:

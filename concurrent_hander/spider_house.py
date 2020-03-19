@@ -351,7 +351,7 @@ class ConcurrentHander :
         extract all href of house page from tag of bigImgList 
         '''
         
-        if data[0]!='lintong':
+        if data[0]!='yanta':
             return
         
         soup=BeautifulSoup(page,'lxml')

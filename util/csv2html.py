@@ -38,7 +38,7 @@ class CSV2HTML:
         converts csv file to html file
         '''
         with open(self.html_file_name,'w') as html_output:
-            self.html_content=self.html_content+'<table border=\"0\">'
+            self.html_content=self.html_content+'<table border=\"1\">'
             for row in self.csv_file:
                 self.html_content=self.html_content+'<tr>'
                 if row[1]=='N101105761825':

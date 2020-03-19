@@ -169,7 +169,27 @@ class Analyse:
                                                     house_info.publish_time=d.string
                                         break       
                                                 
-
+            for di in soup.find(class_="sellDetailHeader").children:
+                if di.name=='div':
+                    for ul in di.children:
+                        if ul.name=='div':
+                            for ul2 in ul.children:
+                                if ul2.name=='div':
+                                    for ul3 in ul2.children:
+                                        if ul3.name=='div':
+                                            print('---------------')
+                                            for ul4 in ul3.children:
+                                                if ul4.name=='div':
+                                                    if ul4['class'][0]=='action':
+                                                        print(ul4['class'])
+                                                        for ul5 in ul4.children:
+                                                            if ul5.name=='span':
+                                                                if ul5['class'][0]=='count':
+                                                                    house_info.focus_num=ul5.string
+                                                    
+                                                    break
+                                                
+                                           
             for div in soup.find(class_="overview").children:
                 if div['class'][0]=='content':
                     for item in div.children:
@@ -214,7 +234,6 @@ class Analyse:
             self.house_info_queue.put(house_info)
             if house_info.neighborhodd_name in house_detail_dict:
                 house_detail_dict[house_info.neighborhodd_name].append(house_info)
-                print('=========================')
             else:
                 house_info_list=[]
                 house_info_list.append(house_info)

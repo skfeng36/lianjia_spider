@@ -52,21 +52,25 @@ class AnalyseThread(threading.Thread):
 
             self.analyse.reduce()
             self.log.info('reduce finished......')
+            self.log.info('ReportForm start......')
 
             form=report_form.ReportForm(self.analyse.house_detail_dict,self.config)
-            form.output_house_info()
-            form.construct_html_file()
-            
+            self.log.info('ReportForm finished......')
+            self.log.info('output_house_info start......')
 
-            '''
-        
+            form.output_house_info()
+            self.log.info('output_house_info finished......')
+            self.log.info('construct_html_file start......')
+
+            form.construct_html_file()
+            self.log.info('construct_html_file finished......')
+            self.log.info('build_mapping_file start......')
+            
+            form.build_mapping_file()
+            self.log.info('build_mapping_file finished......')
+
             end=time.time()
             total_time=end-start
             self.log.info(total_time)
-            analyse_house=analyse.AnalyseHouse(self.current_hander.house_detail_info_queue,self.config)
-            analyse_house.output_house_info()
-
-            house_csv2html=csv2html.CSV2HTML(analyse_house.house_output_file_name)
-            house_csv2html.to_html_file()
-            '''
+        
             time.sleep(self.request_time_interval)
