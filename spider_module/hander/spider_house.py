@@ -21,7 +21,7 @@ class ConcurrentHander :
     '''
     gets the lastest seconde-hand house information  of lianjia from the website(https://xa.lianjia.com/ershoufang/)
     '''
-    def __init__(self,root_url,debug,config,log):
+    def __init__(self,root_url,fast_search_name,debug,config,log):
 
         self.debug=debug
         self.log=log
@@ -29,6 +29,7 @@ class ConcurrentHander :
         self.exe_path=self.config.get('file','exe_path')
         self.root_flie_dir=self.config.get('dir','root_file_dir')
         self.root_url=root_url
+        self.fast_search_name=fast_search_name
         self.region_url_queue=queue.Queue()
         self.region_expand_url_queue=queue.Queue()
         self.region_expand_url_list=[]
@@ -69,8 +70,6 @@ class ConcurrentHander :
     def save_detail_page(self):
         consumer=ConsumerDetailPageThread('consumer_detail_page_thread',self.house_url_detail_page_queue,self.root_url,self.debug,self.config,self.log)
         consumer.start()
-
-
 
     def __get_house_detail_page__(self,id):
         '''
@@ -314,6 +313,7 @@ class ConcurrentHander :
         thread_num=int(self.config.get('thread','get_region_house_page_thread_num'))
 
         num=self.region_expand_url_queue.qsize()
+        print(num)
         if num<thread_num:
             thread_num=num
         
@@ -364,11 +364,34 @@ class ConcurrentHander :
         '''
         extract all href of house page from tag of bigImgList 
         '''
-        
-        if data[0]!='lintong':
+        is_fast_search=False
+        if data[0]=='':
+            is_fast_search=True
+        elif data[0]!='gaoling1':
             return
         
         soup=BeautifulSoup(page,'lxml')
+        region=''
+        
+        if is_fast_search:
+
+            for div in soup.find(class_="sellListContent").children:
+                for clear in div.children:
+                    if clear['class'][0]=='info':
+                        for follow in clear.children:
+                            if follow['class'][0]=='flood':
+                                for dat in follow.children:
+                                    for da in dat.children:
+                                        if da.name=='a':
+                                            if da['href'].find('http')!=-1:
+                                                regoins=da['href'].split('/')
+                                                if len(regoins)>0:
+                                                    region=regoins[len(regoins)-2]
+                        break
+                    
+        
+        if len(data[0])>0:
+            region=data[0]
 
         for div in soup.find(class_="total").children:
             if div.name=='span':
@@ -379,18 +402,16 @@ class ConcurrentHander :
                 if page_total_num>page_total_num_int:
                     page_total_num=page_total_num_int+1
                 
-                for i in range(1,page_total_num+1):
+                for i in range(1,int(page_total_num)+1):
+                
                     url=data[1]+'pg{0}'.format(i)
-                    print(url)
                     new_data=[]
-                    new_data.append(data[0])
+                    new_data.append(region)
                     new_data.append(url)
                     self.region_expand_url_queue.put(new_data)
+                
                     self.region_expand_url_list.append(new_data)
-                    
-           
-
-                                
+                                                
     
     def __expand_region_url_task__(self,id):
         '''
@@ -401,6 +422,7 @@ class ConcurrentHander :
             data=self.region_url_queue.get()
             i=i+1
             self.region_url_queue.task_done()
+            print(data[1])
             html=self.__request_page__(data[1])
             #print(data[1])
             if len(html)!=0:
@@ -421,8 +443,12 @@ class ConcurrentHander :
         start=time.time()   
         
         
-        thread_num=self.config.get('thread','expand_region_url_thread_num')
+        thread_num=int(self.config.get('thread','expand_region_url_thread_num'))
         
+        num=self.region_url_queue.qsize()
+        print(num)
+        if num<thread_num:
+            thread_num=num
         with concurrent.futures.ThreadPoolExecutor(max_workers=int(thread_num)) as executor:
            
             future_to_url = {executor.submit(self.__expand_region_url_task__,id): id for id in range(0,int(thread_num))}
@@ -537,6 +563,25 @@ class ConcurrentHander :
         self.log.info('get house page :{}'.format(total_time))
         print(self.region_url_queue.qsize())
         return True
+      
+    def get_fast_search_root_page_house_info(self):
+        '''
+        concurrently request every page  that you want to search from lianjia
+        '''
+        start=time.time()   
+        urlencode_house_name=urllib.parse.quote(self.fast_search_name)
+        url='https://xa.lianjia.com/ershoufang/pg{}rs'+urlencode_house_name+'/'
+    
+        regoin=[]
+        regoin.append('')
+        regoin.append(url)
+        self.region_url_queue.put(regoin)
+        
+        end=time.time()
+        total_time=end-start
+        self.log.info('get fast_search_name house page :{}'.format(total_time))
+        print(self.region_url_queue.qsize())
+        return True
 
 
 class ConsumerDetailPageThread(threading.Thread):
@@ -556,6 +601,7 @@ class ConsumerDetailPageThread(threading.Thread):
         self.request_time_interval=int(config.get('request','request_time_interval'))
         self.setDaemon(True)
         self.log=log
+        self.lock=threading.Lock()
 
     def __save_file_page__(self,file_name,data):
         with open(file_name,'w') as f:
@@ -585,7 +631,10 @@ class ConsumerDetailPageThread(threading.Thread):
             name=file_name+'/'+data.house_id+'.html'
         
             self.__save_file_page__(name,data.house_detail_page)
+            self.lock.acquire()
             self.save_detail_page_num=self.save_detail_page_num+1
+            self.lock.release()
+            print('save detail page num:{0}'.format(self.save_detail_page_num))
             print('save detail page: {}'.format(name))
                 
             #print(html)
@@ -605,7 +654,7 @@ class ConsumerDetailPageThread(threading.Thread):
                 try:
                     data = future.result()
                 except Exception as exc:
-                    self.log.debug('%r generated an exception: %s' % (id, exc))
+                    self.log.debug('%r save_detail_page generated an exception: %s' % (id, exc))
                     
                 else:
                     if not data:

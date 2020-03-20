@@ -11,14 +11,15 @@ from hander import spider_house
 
 import time
 class ConcurrentGetHouseThread(threading.Thread):
-    def __init__(self,name,root_url,debug,config,log):
+    def __init__(self,name,root_url,fast_search_name,debug,config,log):
         
         threading.Thread.__init__(self)
         self.config=config
         self.name=name
+        self.fast_search_name=fast_search_name
         self.exe_path=self.config.get('file','exe_path')
 
-        self.current_hander=spider_house.ConcurrentHander(root_url,0,config=config,log=log)
+        self.current_hander=spider_house.ConcurrentHander(root_url,self.fast_search_name,0,config=config,log=log)
     
         self.stop=False
         self.retry=int(config.get('request','retry_time'))
@@ -29,8 +30,10 @@ class ConcurrentGetHouseThread(threading.Thread):
         
     def run(self):
 
-        
-        self.current_hander.get_root_page_house_info()
+        if len(self.fast_search_name)>0:
+            self.current_hander.get_fast_search_root_page_house_info()
+        else:
+            self.current_hander.get_root_page_house_info()
 
         self.log.info('expand_region_url start......')
 
