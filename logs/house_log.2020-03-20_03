@@ -1,0 +1,27 @@
+03/20/2020 08:52:38 AM - INFO - get_house_file start......
+03/20/2020 08:52:38 AM - INFO - get_house_file finished.....
+03/20/2020 08:52:38 AM - INFO - construct_house_infos start......
+03/20/2020 08:52:59 AM - DEBUG - get house page thread19: executor 273 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread10: executor 281 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread18: executor 261 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread8: executor 298 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread7: executor 276 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread2: executor 319 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread15: executor 296 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread12: executor 313 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread17: executor 294 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread4: executor 307 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread13: executor 292 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread11: executor 308 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread16: executor 297 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread3: executor 292 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread6: executor 278 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread5: executor 305 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread14: executor 313 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread1: executor 326 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread0: executor 306 task done
+03/20/2020 08:52:59 AM - DEBUG - get house page thread9: executor 302 task done
+03/20/2020 08:52:59 AM - INFO - 总共提取5937个房屋
+03/20/2020 08:52:59 AM - INFO - extract house url :20.563754081726074
+03/20/2020 08:52:59 AM - INFO - construct_house_infos finished......
+03/20/2020 08:52:59 AM - INFO - extract_house_detail start......
