@@ -15,6 +15,8 @@ import time
 import csv
 import os
 import threading
+from thread import consumer_detail_page_thread
+
 
 from http.server import HTTPServer,BaseHTTPRequestHandler
 class ConcurrentHander :
@@ -68,7 +70,7 @@ class ConcurrentHander :
         self.log=log
      
     def save_detail_page(self):
-        consumer=ConsumerDetailPageThread('consumer_detail_page_thread',self.house_url_detail_page_queue,self.root_url,self.debug,self.config,self.log)
+        consumer=consumer_detail_page_thread.ConsumerDetailPageThread('consumer_detail_page_thread',self.house_url_detail_page_queue,self.root_url,self.debug,self.config,self.log)
         consumer.start()
 
     def __get_house_detail_page__(self,id):
@@ -113,6 +115,8 @@ class ConcurrentHander :
         thread_num=int(self.config.get('thread','get_house_detail_page_thread_num'))
 
         num=self.house_url_queue.qsize()
+        if num==0:
+            return
         if num<thread_num:
             thread_num=num
         
@@ -176,6 +180,7 @@ class ConcurrentHander :
                     data.append(house_info.region)
                     self.house_url_list.append(data)
                     
+                                
             house_info_list[house_id]=house_info
 
         
@@ -231,6 +236,8 @@ class ConcurrentHander :
         start=time.time()
         thread_num=int(self.config.get('thread','extract_house_info_thread_num'))
         num=self.region_page_content_queue.qsize()
+        if num==0:
+            return
         if num<thread_num:
             thread_num=num
         
@@ -251,14 +258,24 @@ class ConcurrentHander :
         self.region_page_content_queue.join()
         self.log.info('总共提取{}个房屋url'.format(self.house_url_queue.qsize()))
         file_name=self.root_flie_dir+'/file/city/xian/region/'+self.house_url_list[0][2]
-    
+        update_list_name=self.root_flie_dir+'/file/city/xian/region/update_url.csv'
+
         self.__mkdir___(file_name)
         file_name=file_name+'/'+self.house_url_list[0][2]+'_url.csv'
-    
+        self.__save__update_file__(update_list_name,self.house_url_list)
+
         self.__save_region_house_url_(file_name)
+        
         end=time.time()
         total_time=end-start
         self.log.info('extract house url :{}'.format(total_time))
+
+    def __save__update_file__(self,file_name,data):
+         with open(file_name,'w') as f:
+            out_csv=csv.writer(f)
+            for item in data:
+                path=self.root_flie_dir+'/file/city/xian/region/'+item[2]+'/url_detail_page/'+item[0]+'.html'
+                out_csv.writerow([path,item[2]])
 
     def __save_region_house_url_(self,file_name):
         
@@ -266,7 +283,18 @@ class ConcurrentHander :
         self.house_url_list.clear()
         
 
+    def __save_dict_file__(self,file_name,data):
+        with open(file_name,'w') as f:
+            out_csv=csv.writer(f)
+            for i in range(0,data.qsize()):
+                data=self.house_url_queue.get()
+                url=data.href
+                house_id=data.house_id
+                self.house_url_queue.task_done()
+                out_csv.writerow([house_id,url])
+
     
+        
     def __get_region_house_page_task__(self,id):
         '''
         request the house page of lianjia
@@ -313,7 +341,10 @@ class ConcurrentHander :
         thread_num=int(self.config.get('thread','get_region_house_page_thread_num'))
 
         num=self.region_expand_url_queue.qsize()
+
         print(num)
+        if num==0:
+            return
         if num<thread_num:
             thread_num=num
         
@@ -336,10 +367,15 @@ class ConcurrentHander :
         if size==0:
             return False
         file_name=self.root_flie_dir+'/file/city/xian/region/'+self.region_expand_url_list[0][0]+'/page'
+        version_file_name=self.root_flie_dir+'/file/city/xian/region/'+self.region_expand_url_list[0][0]+'/version'
         self.region_expand_url_list.clear()
         self.__mkdir___(file_name)
     
         self.__save_region_house_page_(file_name)
+        
+        t=int(time.time()) 
+
+        self.__save_file__(version_file_name,t)
         end=time.time()
         total_time=end-start
         self.log.info('get house page :{}'.format(total_time))
@@ -367,7 +403,7 @@ class ConcurrentHander :
         is_fast_search=False
         if data[0]=='':
             is_fast_search=True
-        elif data[0]!='gaoling1':
+        elif data[0]!='weiyang':
             return
         
         soup=BeautifulSoup(page,'lxml')
@@ -401,7 +437,8 @@ class ConcurrentHander :
 
                 if page_total_num>page_total_num_int:
                     page_total_num=page_total_num_int+1
-                
+                if page_total_num>100:
+                    page_total_num=100
                 for i in range(1,int(page_total_num)+1):
                 
                     url=data[1]+'pg{0}'.format(i)
@@ -447,6 +484,8 @@ class ConcurrentHander :
         
         num=self.region_url_queue.qsize()
         print(num)
+        if num==0:
+            return
         if num<thread_num:
             thread_num=num
         with concurrent.futures.ThreadPoolExecutor(max_workers=int(thread_num)) as executor:
@@ -471,13 +510,10 @@ class ConcurrentHander :
         
         self.__mkdir___(file_name)
         file_name=file_name+'/'+self.region_expand_url_list[0][0]+'.csv'
-
-    
         self.__save_expand_region_url_info__(file_name)
         end=time.time()
         total_time=end-start
-        self.log.info(
-            'get house page :{}'.format(total_time))
+        self.log.info('get house page :{}'.format(total_time))
         return True
 
     def __save_expand_region_url_info__(self,file_name):
@@ -508,6 +544,8 @@ class ConcurrentHander :
             if type(data)==list:
                 for dt in data:
                     out_csv.writerow(dt)
+            elif type(data)==int:
+                out_csv.writerow([data])
             else:
                 out_csv.writerow(data)
     
@@ -583,95 +621,6 @@ class ConcurrentHander :
         print(self.region_url_queue.qsize())
         return True
 
-
-class ConsumerDetailPageThread(threading.Thread):
-
-    def __init__(self,name,house_url_detail_page_queue,root_url,debug,config,log):
-        
-        threading.Thread.__init__(self)
-        self.config=config
-        self.name=name
-        self.exe_path=self.config.get('file','exe_path')
-        self.house_url_detail_page_queue=house_url_detail_page_queue
-        self.root_flie_dir=self.config.get('dir','root_file_dir')
-        self.save_detail_page_num=0
-        self.stop=False
-        self.retry=int(config.get('request','retry_time'))
-        self.retry_time_interval=int(config.get('request','retry_time_interval'))
-        self.request_time_interval=int(config.get('request','request_time_interval'))
-        self.setDaemon(True)
-        self.log=log
-        self.lock=threading.Lock()
-
-    def __save_file_page__(self,file_name,data):
-        with open(file_name,'w') as f:
-    
-            f.write(data)
-
-    def __mkdir___(self,path):
-        isExists=os.path.exists(path)
-        if not isExists:
-            os.makedirs(path)
-
-    def __save_page__(self,id):
-    
-        '''
-        log on the site firstly. then save the cookie that site send .
-        '''
-        i=0
-        n=1
-        while True:
-            
-            data=self.house_url_detail_page_queue.get()
-            i=i+1
-            self.house_url_detail_page_queue.task_done()
-            file_name=self.root_flie_dir+'/file/city/xian/region/'+data.region+'/url_detail_page'
-    
-            self.__mkdir___(file_name)
-            name=file_name+'/'+data.house_id+'.html'
-        
-            self.__save_file_page__(name,data.house_detail_page)
-            self.lock.acquire()
-            self.save_detail_page_num=self.save_detail_page_num+1
-            self.lock.release()
-            print('save detail page num:{0}'.format(self.save_detail_page_num))
-            print('save detail page: {}'.format(name))
-                
-            #print(html)
-        
-        self.log.debug('__save_page__ thread{}:executor {} task'.format(id,i))
-        return True
-
-    def save_detail_page(self):
-        start=time.time()
-        thread_num=int(self.config.get('thread','get_house_detail_page_thread_num'))
-        
-        with concurrent.futures.ThreadPoolExecutor(max_workers=thread_num) as executor:
-           
-            future_to_url = {executor.submit(self.__save_page__,id): id for id in range(0,int(thread_num))}
-            for future in concurrent.futures.as_completed(future_to_url):
-                id = future_to_url[future]
-                try:
-                    data = future.result()
-                except Exception as exc:
-                    self.log.debug('%r save_detail_page generated an exception: %s' % (id, exc))
-                    
-                else:
-                    if not data:
-                        return False
-                    self.log.debug('get house detail page thread:{} is done'.format(id))
-
-        self.house_url_detail_page_queue.join()
-        self.log.info('总共保存{}个房屋详情页'.format(self.save_detail_page_num))
-       
-        end=time.time()
-        total_time=end-start
-        self.log.info('save_detail_page :{}'.format(total_time))
-        return True
-
-    def run(self):
-
-        self.save_detail_page()
 
 class HouseInfo:
 

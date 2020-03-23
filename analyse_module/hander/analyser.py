@@ -43,7 +43,21 @@ class Analyse:
         self.house_file_page_queue=queue.Queue()
 
         self.house_info_queue=queue.Queue()
-        
+
+    def load_house_file(self):
+        file_name=self.houe_file_root+'/update_url.csv'
+        print(file_name)
+        with open(file_name) as f:
+            csv_file=csv.reader(f)
+            for row in csv_file:
+                if row[1] in self.house_files:
+                    self.house_files[row[1]].append(row[0])
+                else:
+                    data=[]
+                    data.append(row[0])
+                    self.house_files[row[1]]=data
+
+
     def get_house_file(self,level=0,data='',path=''):
         if len(path)==0:
             path=self.houe_file_root
@@ -65,6 +79,7 @@ class Analyse:
                         if data in self.house_files:
                             file_list=self.house_files[data]
                             file_list.append(dir_file_path)
+                            print(dir_file_path)
     
     def __get_house_page__(self,id):
         '''
@@ -109,6 +124,8 @@ class Analyse:
     
         thread_num=int(self.config.get('thread','get_house_detail_page_thread_num'))
         num=self.house_files_queue.qsize()
+        if num==0:
+            return
         if num<thread_num:
             thread_num=num
         print(thread_num)
@@ -177,11 +194,9 @@ class Analyse:
                                 if ul2.name=='div':
                                     for ul3 in ul2.children:
                                         if ul3.name=='div':
-                                            print('---------------')
                                             for ul4 in ul3.children:
                                                 if ul4.name=='div':
                                                     if ul4['class'][0]=='action':
-                                                        print(ul4['class'])
                                                         for ul5 in ul4.children:
                                                             if ul5.name=='span':
                                                                 if ul5['class'][0]=='count':
@@ -253,6 +268,8 @@ class Analyse:
         start=time.time()
         thread_num=int(self.config.get('thread','extract_house_detail_thread_num'))
         num=self.house_file_page_queue.qsize()
+        if num==0:
+            return
         if num<thread_num:
             thread_num=num
         with concurrent.futures.ThreadPoolExecutor(max_workers=int(thread_num)) as executor:
@@ -289,9 +306,9 @@ class Analyse:
                     house_detail_dict[key]=house_info_list
                     
         self.house_detail_dict=house_detail_dict
-
-
-
+        
+    
+    
 class HouseData:
 
     def __init__(self):

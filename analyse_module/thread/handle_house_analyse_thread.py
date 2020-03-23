@@ -38,7 +38,8 @@ class AnalyseThread(threading.Thread):
             self.analyse.clear()
             self.log.info('get_house_file start......')
 
-            self.analyse.get_house_file()
+            #self.analyse.get_house_file()
+            self.analyse.load_house_file()
             self.log.info('get_house_file finished.....')
             self.log.info('construct_house_infos start......')
 

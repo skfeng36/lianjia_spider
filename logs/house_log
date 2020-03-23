@@ -1,237 +1,75 @@
-03/20/2020 14:55:10 PM - INFO - get house page :0.7765727043151855
-03/20/2020 14:55:10 PM - INFO - expand_region_url start......
-03/20/2020 14:55:12 PM - DEBUG - __expand_region_url_task__ thread0: executor 4 task done
-03/20/2020 14:55:13 PM - DEBUG - __expand_region_url_task__ thread2: executor 5 task done
-03/20/2020 14:55:13 PM - DEBUG - __expand_region_url_task__ thread1: executor 5 task done
-03/20/2020 14:55:13 PM - INFO - 总共4个页面
-03/20/2020 14:55:13 PM - INFO - get house page :3.7998383045196533
-03/20/2020 14:55:13 PM - INFO - expand_region_url finished.....
-03/20/2020 14:55:13 PM - INFO - get_region_house_page start......
-03/20/2020 14:55:15 PM - DEBUG - get house page thread3: executor 1 task done
-03/20/2020 14:55:15 PM - DEBUG - get house page thread0: executor 1 task done
-03/20/2020 14:55:15 PM - DEBUG - get house page thread2: executor 1 task done
-03/20/2020 14:55:15 PM - DEBUG - get house page thread1: executor 1 task done
-03/20/2020 14:55:16 PM - INFO - 总共4个页面
-03/20/2020 14:55:16 PM - INFO - get house page :2.077427625656128
-03/20/2020 14:55:16 PM - INFO - get_region_house_page finished.....
-03/20/2020 14:55:16 PM - INFO - extract_house_url_info start....
-03/20/2020 14:55:16 PM - DEBUG - extract house url thread0: executor 1 task done
-03/20/2020 14:55:16 PM - DEBUG - extract house url thread1: executor 1 task done
-03/20/2020 14:55:16 PM - DEBUG - extract house url thread2: executor 1 task done
-03/20/2020 14:55:16 PM - DEBUG - extract house url thread3: executor 1 task done
-03/20/2020 14:55:16 PM - INFO - 总共提取92个房屋url
-03/20/2020 14:55:16 PM - INFO - extract house url :0.809044361114502
-03/20/2020 14:55:16 PM - INFO - extract_house_url_info finished....
-03/20/2020 14:55:16 PM - INFO - get_house_url_detail_page start....
-03/20/2020 14:55:16 PM - DEBUG - thread:0 request:https://xa.lianjia.com/ershoufang/101106998427.html
-03/20/2020 14:55:16 PM - DEBUG - thread:1 request:https://xa.lianjia.com/ershoufang/101105152895.html
-03/20/2020 14:55:16 PM - DEBUG - thread:2 request:https://xa.lianjia.com/ershoufang/101106208131.html
-03/20/2020 14:55:16 PM - DEBUG - thread:3 request:https://xa.lianjia.com/ershoufang/101105368472.html
-03/20/2020 14:55:16 PM - DEBUG - thread:4 request:https://xa.lianjia.com/ershoufang/101106206945.html
-03/20/2020 14:55:16 PM - DEBUG - thread:5 request:https://xa.lianjia.com/ershoufang/101106274882.html
-03/20/2020 14:55:16 PM - DEBUG - thread:6 request:https://xa.lianjia.com/ershoufang/101105650024.html
-03/20/2020 14:55:16 PM - DEBUG - thread:7 request:https://xa.lianjia.com/ershoufang/101106212427.html
-03/20/2020 14:55:16 PM - DEBUG - thread:8 request:https://xa.lianjia.com/ershoufang/101106317623.html
-03/20/2020 14:55:16 PM - DEBUG - thread:9 request:https://xa.lianjia.com/ershoufang/101106980444.html
-03/20/2020 14:55:16 PM - DEBUG - thread:10 request:https://xa.lianjia.com/ershoufang/101106824818.html
-03/20/2020 14:55:16 PM - DEBUG - thread:11 request:https://xa.lianjia.com/ershoufang/101106824957.html
-03/20/2020 14:55:16 PM - DEBUG - thread:12 request:https://xa.lianjia.com/ershoufang/101106916987.html
-03/20/2020 14:55:16 PM - DEBUG - thread:13 request:https://xa.lianjia.com/ershoufang/101106918956.html
-03/20/2020 14:55:16 PM - DEBUG - thread:14 request:https://xa.lianjia.com/ershoufang/101106921703.html
-03/20/2020 14:55:16 PM - DEBUG - thread:15 request:https://xa.lianjia.com/ershoufang/101106922351.html
-03/20/2020 14:55:16 PM - DEBUG - thread:16 request:https://xa.lianjia.com/ershoufang/101106922400.html
-03/20/2020 14:55:16 PM - DEBUG - thread:17 request:https://xa.lianjia.com/ershoufang/101106947147.html
-03/20/2020 14:55:16 PM - DEBUG - thread:18 request:https://xa.lianjia.com/ershoufang/101106951898.html
-03/20/2020 14:55:16 PM - DEBUG - thread:19 request:https://xa.lianjia.com/ershoufang/101106973366.html
-03/20/2020 14:55:18 PM - DEBUG - thread:0 request:https://xa.lianjia.com/ershoufang/101106976709.html
-03/20/2020 14:55:18 PM - DEBUG - thread:10 request:https://xa.lianjia.com/ershoufang/101106992443.html
-03/20/2020 14:55:18 PM - DEBUG - thread:5 request:https://xa.lianjia.com/ershoufang/101106835230.html
-03/20/2020 14:55:18 PM - DEBUG - thread:3 request:https://xa.lianjia.com/ershoufang/101105968369.html
-03/20/2020 14:55:18 PM - DEBUG - thread:14 request:https://xa.lianjia.com/ershoufang/101106384970.html
-03/20/2020 14:55:18 PM - DEBUG - thread:9 request:https://xa.lianjia.com/ershoufang/101106513516.html
-03/20/2020 14:55:18 PM - DEBUG - thread:6 request:https://xa.lianjia.com/ershoufang/101106864751.html
-03/20/2020 14:55:18 PM - DEBUG - thread:7 request:https://xa.lianjia.com/ershoufang/101106867439.html
-03/20/2020 14:55:18 PM - DEBUG - thread:17 request:https://xa.lianjia.com/ershoufang/101106872465.html
-03/20/2020 14:55:18 PM - DEBUG - thread:12 request:https://xa.lianjia.com/ershoufang/101106877749.html
-03/20/2020 14:55:18 PM - DEBUG - thread:11 request:https://xa.lianjia.com/ershoufang/101106881283.html
-03/20/2020 14:55:18 PM - DEBUG - thread:19 request:https://xa.lianjia.com/ershoufang/101106889800.html
-03/20/2020 14:55:18 PM - DEBUG - thread:18 request:https://xa.lianjia.com/ershoufang/101106182593.html
-03/20/2020 14:55:18 PM - DEBUG - thread:1 request:https://xa.lianjia.com/ershoufang/101106207914.html
-03/20/2020 14:55:18 PM - DEBUG - thread:16 request:https://xa.lianjia.com/ershoufang/101106272865.html
-03/20/2020 14:55:18 PM - DEBUG - thread:15 request:https://xa.lianjia.com/ershoufang/101106274534.html
-03/20/2020 14:55:18 PM - DEBUG - thread:2 request:https://xa.lianjia.com/ershoufang/101106315444.html
-03/20/2020 14:55:18 PM - DEBUG - thread:8 request:https://xa.lianjia.com/ershoufang/101106369775.html
-03/20/2020 14:55:19 PM - DEBUG - thread:4 request:https://xa.lianjia.com/ershoufang/101106375522.html
-03/20/2020 14:55:19 PM - DEBUG - thread:13 request:https://xa.lianjia.com/ershoufang/101106386536.html
-03/20/2020 14:55:20 PM - DEBUG - thread:0 request:https://xa.lianjia.com/ershoufang/101106500146.html
-03/20/2020 14:55:20 PM - DEBUG - thread:12 request:https://xa.lianjia.com/ershoufang/101106510174.html
-03/20/2020 14:55:20 PM - DEBUG - thread:7 request:https://xa.lianjia.com/ershoufang/101106510958.html
-03/20/2020 14:55:20 PM - DEBUG - thread:3 request:https://xa.lianjia.com/ershoufang/101106517893.html
-03/20/2020 14:55:20 PM - DEBUG - thread:10 request:https://xa.lianjia.com/ershoufang/101106571929.html
-03/20/2020 14:55:20 PM - DEBUG - thread:2 request:https://xa.lianjia.com/ershoufang/101106582066.html
-03/20/2020 14:55:20 PM - DEBUG - thread:18 request:https://xa.lianjia.com/ershoufang/101106623271.html
-03/20/2020 14:55:20 PM - DEBUG - thread:17 request:https://xa.lianjia.com/ershoufang/101106631527.html
-03/20/2020 14:55:20 PM - DEBUG - thread:14 request:https://xa.lianjia.com/ershoufang/101106633291.html
-03/20/2020 14:55:20 PM - DEBUG - thread:6 request:https://xa.lianjia.com/ershoufang/101106639239.html
-03/20/2020 14:55:20 PM - DEBUG - thread:19 request:https://xa.lianjia.com/ershoufang/101106639699.html
-03/20/2020 14:55:20 PM - DEBUG - thread:9 request:https://xa.lianjia.com/ershoufang/101106641019.html
-03/20/2020 14:55:20 PM - DEBUG - thread:16 request:https://xa.lianjia.com/ershoufang/101106648500.html
-03/20/2020 14:55:20 PM - DEBUG - thread:4 request:https://xa.lianjia.com/ershoufang/101106650850.html
-03/20/2020 14:55:20 PM - DEBUG - thread:15 request:https://xa.lianjia.com/ershoufang/101106745692.html
-03/20/2020 14:55:20 PM - DEBUG - thread:1 request:https://xa.lianjia.com/ershoufang/101106776771.html
-03/20/2020 14:55:20 PM - DEBUG - thread:8 request:https://xa.lianjia.com/ershoufang/101106782960.html
-03/20/2020 14:55:21 PM - DEBUG - thread:13 request:https://xa.lianjia.com/ershoufang/101106793032.html
-03/20/2020 14:55:21 PM - DEBUG - thread:5 request:https://xa.lianjia.com/ershoufang/101106985043.html
-03/20/2020 14:55:21 PM - DEBUG - thread:11 request:https://xa.lianjia.com/ershoufang/101106987947.html
-03/20/2020 14:55:22 PM - DEBUG - thread:0 request:https://xa.lianjia.com/ershoufang/101106989167.html
-03/20/2020 14:55:22 PM - DEBUG - thread:7 request:https://xa.lianjia.com/ershoufang/101106995458.html
-03/20/2020 14:55:22 PM - DEBUG - thread:3 request:https://xa.lianjia.com/ershoufang/101106892507.html
-03/20/2020 14:55:22 PM - DEBUG - thread:12 request:https://xa.lianjia.com/ershoufang/101106896314.html
-03/20/2020 14:55:22 PM - DEBUG - thread:10 request:https://xa.lianjia.com/ershoufang/101106919456.html
-03/20/2020 14:55:22 PM - DEBUG - thread:4 request:https://xa.lianjia.com/ershoufang/101106049302.html
-03/20/2020 14:55:22 PM - DEBUG - thread:15 request:https://xa.lianjia.com/ershoufang/101106809022.html
-03/20/2020 14:55:22 PM - DEBUG - thread:16 request:https://xa.lianjia.com/ershoufang/101106814436.html
-03/20/2020 14:55:22 PM - DEBUG - thread:17 request:https://xa.lianjia.com/ershoufang/101106818989.html
-03/20/2020 14:55:22 PM - DEBUG - thread:18 request:https://xa.lianjia.com/ershoufang/101106825599.html
-03/20/2020 14:55:22 PM - DEBUG - thread:9 request:https://xa.lianjia.com/ershoufang/101106826854.html
-03/20/2020 14:55:22 PM - DEBUG - thread:1 request:https://xa.lianjia.com/ershoufang/101106845660.html
-03/20/2020 14:55:22 PM - DEBUG - thread:19 request:https://xa.lianjia.com/ershoufang/101106582029.html
-03/20/2020 14:55:22 PM - DEBUG - thread:8 request:https://xa.lianjia.com/ershoufang/101105882947.html
-03/20/2020 14:55:22 PM - DEBUG - thread:13 request:https://xa.lianjia.com/ershoufang/101105997577.html
-03/20/2020 14:55:22 PM - DEBUG - thread:6 request:https://xa.lianjia.com/ershoufang/101106437611.html
-03/20/2020 14:55:22 PM - DEBUG - thread:5 request:https://xa.lianjia.com/ershoufang/101106500005.html
-03/20/2020 14:55:22 PM - DEBUG - thread:2 request:https://xa.lianjia.com/ershoufang/101104554463.html
-03/20/2020 14:55:23 PM - DEBUG - thread:11 request:https://xa.lianjia.com/ershoufang/101105003340.html
-03/20/2020 14:55:23 PM - DEBUG - thread:14 request:https://xa.lianjia.com/ershoufang/101105352992.html
-03/20/2020 14:55:24 PM - DEBUG - thread:0 request:https://xa.lianjia.com/ershoufang/101105533590.html
-03/20/2020 14:55:24 PM - DEBUG - thread:7 request:https://xa.lianjia.com/ershoufang/101105541405.html
-03/20/2020 14:55:24 PM - DEBUG - thread:17 request:https://xa.lianjia.com/ershoufang/101105640889.html
-03/20/2020 14:55:24 PM - DEBUG - thread:12 request:https://xa.lianjia.com/ershoufang/101105739469.html
-03/20/2020 14:55:24 PM - DEBUG - thread:3 request:https://xa.lianjia.com/ershoufang/101105783060.html
-03/20/2020 14:55:24 PM - DEBUG - thread:16 request:https://xa.lianjia.com/ershoufang/101105816548.html
-03/20/2020 14:55:24 PM - DEBUG - thread:19 request:https://xa.lianjia.com/ershoufang/101105917323.html
-03/20/2020 14:55:24 PM - DEBUG - thread:8 request:https://xa.lianjia.com/ershoufang/101105930559.html
-03/20/2020 14:55:24 PM - DEBUG - thread:15 request:https://xa.lianjia.com/ershoufang/101106002261.html
-03/20/2020 14:55:24 PM - DEBUG - thread:10 request:https://xa.lianjia.com/ershoufang/101106109547.html
-03/20/2020 14:55:24 PM - DEBUG - thread:18 request:https://xa.lianjia.com/ershoufang/101106145275.html
-03/20/2020 14:55:24 PM - DEBUG - thread:1 request:https://xa.lianjia.com/ershoufang/101106146022.html
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread9:executor 4 task
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread2:executor 4 task
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread:9 is done
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread:2 is done
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread6:executor 4 task
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread:6 is done
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread4:executor 4 task
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread:4 is done
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread5:executor 4 task
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread:5 is done
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread13:executor 4 task
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread:13 is done
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread11:executor 4 task
-03/20/2020 14:55:24 PM - DEBUG - get house detail page thread:11 is done
-03/20/2020 14:55:25 PM - DEBUG - get house detail page thread14:executor 4 task
-03/20/2020 14:55:25 PM - DEBUG - get house detail page thread:14 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread0:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:0 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread7:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:7 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread3:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:3 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread1:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:1 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread16:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:16 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread15:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:15 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread8:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:8 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread19:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:19 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread17:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:17 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread12:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:12 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread18:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:18 is done
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread10:executor 5 task
-03/20/2020 14:55:26 PM - DEBUG - get house detail page thread:10 is done
-03/20/2020 14:55:26 PM - INFO - 总共下载92个房屋详情页
-03/20/2020 14:55:26 PM - INFO - get_house_url_detail_page :9.896472215652466
-03/20/2020 14:55:26 PM - INFO - get_house_url_detail_page finished....
-03/20/2020 14:55:53 PM - INFO - get_house_file start......
-03/20/2020 14:55:53 PM - INFO - get_house_file finished.....
-03/20/2020 14:55:53 PM - INFO - construct_house_infos start......
-03/20/2020 14:55:53 PM - DEBUG - get house page thread16: executor 1 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread1: executor 8 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread11: executor 3 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread6: executor 6 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread14: executor 3 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread2: executor 9 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread7: executor 6 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread4: executor 9 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread10: executor 5 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread12: executor 2 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread13: executor 3 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread0: executor 10 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread9: executor 4 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread5: executor 7 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread3: executor 10 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread15: executor 2 task done
-03/20/2020 14:55:53 PM - DEBUG - get house page thread8: executor 4 task done
-03/20/2020 14:55:53 PM - INFO - construct_house_infos finished......
-03/20/2020 14:55:53 PM - INFO - extract_house_detail start......
-03/20/2020 14:56:00 PM - DEBUG - extract house detail thread7:executor 4 task
-03/20/2020 14:56:00 PM - DEBUG - extract house detail thread:7 is done
-03/20/2020 14:56:00 PM - DEBUG - extract house detail thread3:executor 4 task
-03/20/2020 14:56:00 PM - DEBUG - extract house detail thread:3 is done
-03/20/2020 14:56:00 PM - DEBUG - extract house detail thread5:executor 4 task
-03/20/2020 14:56:00 PM - DEBUG - extract house detail thread:5 is done
-03/20/2020 14:56:00 PM - DEBUG - extract house detail thread19:executor 4 task
-03/20/2020 14:56:00 PM - DEBUG - extract house detail thread:19 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread12:executor 4 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:12 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread10:executor 4 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:10 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread15:executor 4 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:15 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread4:executor 4 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:4 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread14:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:14 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread1:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:1 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread17:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:17 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread0:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:0 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread11:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:11 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread2:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:2 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread8:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:8 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread16:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:16 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread6:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:6 is done
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread13:executor 5 task
-03/20/2020 14:56:01 PM - DEBUG - extract house detail thread:13 is done
-03/20/2020 14:56:02 PM - DEBUG - extract house detail thread18:executor 5 task
-03/20/2020 14:56:02 PM - DEBUG - extract house detail thread:18 is done
-03/20/2020 14:56:02 PM - DEBUG - extract house detail thread9:executor 5 task
-03/20/2020 14:56:02 PM - DEBUG - extract house detail thread:9 is done
-03/20/2020 14:56:02 PM - INFO - 总共提取92个房屋详细信息
-03/20/2020 14:56:02 PM - INFO - extract house detail :8.780758142471313
-03/20/2020 14:56:02 PM - INFO - extract_house_detail finished......
-03/20/2020 14:56:02 PM - INFO - reduce start......
-03/20/2020 14:56:02 PM - INFO - reduce finished......
-03/20/2020 14:56:02 PM - INFO - ReportForm start......
-03/20/2020 14:56:02 PM - INFO - ReportForm finished......
-03/20/2020 14:56:02 PM - INFO - output_house_info start......
-03/20/2020 14:56:02 PM - INFO - output_house_info finished......
-03/20/2020 14:56:02 PM - INFO - construct_html_file start......
-03/20/2020 14:56:02 PM - INFO - construct_html_file finished......
-03/20/2020 14:56:02 PM - INFO - build_mapping_file start......
-03/20/2020 14:56:02 PM - INFO - build_mapping_file finished......
-03/20/2020 14:56:02 PM - INFO - 8.91175651550293
-03/20/2020 14:56:21 PM - INFO - thread:server http server listening.....
+03/23/2020 12:51:58 PM - INFO - get_house_file start......
+03/23/2020 12:51:58 PM - INFO - get_house_file finished.....
+03/23/2020 12:51:58 PM - INFO - construct_house_infos start......
+03/23/2020 12:51:59 PM - DEBUG - get house page thread9: executor 4 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread10: executor 6 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread5: executor 7 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread3: executor 6 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread12: executor 4 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread15: executor 2 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread11: executor 3 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread1: executor 10 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread8: executor 4 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread2: executor 8 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread7: executor 9 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread0: executor 11 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread4: executor 7 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread14: executor 2 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread13: executor 1 task done
+03/23/2020 12:51:59 PM - DEBUG - get house page thread6: executor 6 task done
+03/23/2020 12:51:59 PM - INFO - construct_house_infos finished......
+03/23/2020 12:51:59 PM - INFO - extract_house_detail start......
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread1:executor 4 task
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread:1 is done
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread13:executor 4 task
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread:13 is done
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread18:executor 4 task
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread:18 is done
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread14:executor 4 task
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread:14 is done
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread12:executor 4 task
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread:12 is done
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread2:executor 4 task
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread:2 is done
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread11:executor 4 task
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread:11 is done
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread3:executor 4 task
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread:3 is done
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread4:executor 4 task
+03/23/2020 12:52:09 PM - DEBUG - extract house detail thread:4 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread17:executor 4 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:17 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread15:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:15 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread6:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:6 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread7:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:7 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread0:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread10:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:0 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:10 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread19:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:19 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread9:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:9 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread5:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:5 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread8:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread16:executor 5 task
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:8 is done
+03/23/2020 12:52:10 PM - DEBUG - extract house detail thread:16 is done
+03/23/2020 12:52:10 PM - INFO - 总共提取90个房屋详细信息
+03/23/2020 12:52:10 PM - INFO - extract house detail :11.641405820846558
+03/23/2020 12:52:10 PM - INFO - extract_house_detail finished......
+03/23/2020 12:52:10 PM - INFO - reduce start......
+03/23/2020 12:52:10 PM - INFO - reduce finished......
+03/23/2020 12:52:10 PM - INFO - ReportForm start......
+03/23/2020 12:52:10 PM - INFO - ReportForm finished......
+03/23/2020 12:52:10 PM - INFO - output_house_info start......
+03/23/2020 12:52:10 PM - INFO - output_house_info finished......
+03/23/2020 12:52:10 PM - INFO - construct_html_file start......
+03/23/2020 12:52:10 PM - INFO - construct_html_file finished......
+03/23/2020 12:52:10 PM - INFO - build_mapping_file start......
+03/23/2020 12:52:10 PM - INFO - build_mapping_file finished......
+03/23/2020 12:52:10 PM - INFO - 11.761242866516113
