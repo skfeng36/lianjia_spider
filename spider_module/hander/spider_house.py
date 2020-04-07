@@ -403,7 +403,7 @@ class ConcurrentHander :
         is_fast_search=False
         if data[0]=='':
             is_fast_search=True
-        elif data[0]!='weiyang':
+        elif data[0]!='gaoling1':
             return
         
         soup=BeautifulSoup(page,'lxml')

@@ -9,13 +9,15 @@ import os
 import concurrent.futures
 import time
 from bs4 import BeautifulSoup
+from super_thread import thread_pool
 
-class Analyse:
+class Analyse(thread_pool.Task):
     '''
     analyse house informations from the website.
     '''
     
     def __init__(self,config,log):
+        thread_pool.Task.__init__(self,'analyse_task')
         self.log=log
         self.house_file_name=[]
         self.house_detail_info_queue=queue.Queue()
@@ -23,8 +25,8 @@ class Analyse:
         self.exe_path=self.config.get('file','exe_path')
         self.root_file_dir=self.config.get('dir','root_file_dir')
         self.houe_file_root=self.root_file_dir+self.config.get('dir','house_file_dir')
-        self.house_files={} #{regin:[house1_file_path,house2_file_path]}
-        self.house_files_queue=queue.Queue() #data.region data.house_file data.house_page
+        self.house_files={} #{regin:[house1,house2]}
+        self.house_files_queue=queue.Queue()
         self.house_file_page_queue=queue.Queue()
 
         self.house_info_queue=queue.Queue()
@@ -32,10 +34,40 @@ class Analyse:
         self.house_detail_info_list=[]
 
         self.house_detail_dict={}
-        
 
         self.file_level=0
+        self.stop=False
     
+    def run(self):
+         while not self.stop :
+            start=time.time()
+            retry=self.retry
+            self.clear()
+            self.log.info('get_house_file start......')
+
+            #self.analyse.get_house_file()
+            self.load_house_file()
+            self.log.info('get_house_file finished.....')
+            self.log.info('construct_house_infos start......')
+
+            self.construct_house_infos()
+            self.log.info('construct_house_infos finished......')
+            self.log.info('extract_house_detail start......')
+
+            self.extract_house_detail()
+            self.log.info('extract_house_detail finished......')
+            self.log.info('reduce start......')
+
+            self.reduce()
+            self.log.info('reduce finished......')
+            self.log.info('ReportForm start......')
+
+
+            end=time.time()
+            total_time=end-start
+            self.log.info(total_time)
+            time.sleep(self.request_time_interval)
+
     def clear(self):
         self.house_detail_info_queue=queue.Queue()
         self.house_files={} #{regin:[house1,house2]}

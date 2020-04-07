@@ -56,7 +56,8 @@ class ReportForm:
             with open(house_output_file_name,'w') as f:
                 out_csv=csv.writer(f)
                 self.house_detail_dict[neighborhood].sort(key=self.__sort_by_total_price__)
-                out_csv.writerow(['序号','房屋编号','面积','总价','装修情况','均价','发布时间','关注人数'])
+                
+                out_csv.writerow(['序号','('+neighborhood+')房屋编号','面积','总价','装修情况','均价','发布时间','关注人数'])
                 i=0
                 for house in self.house_detail_dict[neighborhood]:
                     i=i+1

@@ -1,0 +1,65 @@
+03/31/2020 21:25:23 PM - INFO - get_house_file start......
+03/31/2020 21:25:23 PM - INFO - get_house_file finished.....
+03/31/2020 21:25:23 PM - INFO - construct_house_infos start......
+03/31/2020 21:25:23 PM - DEBUG - get house page thread4: executor 5 task done
+03/31/2020 21:25:23 PM - DEBUG - get house page thread2: executor 3 task done
+03/31/2020 21:25:23 PM - DEBUG - get house page thread5: executor 1 task done
+03/31/2020 21:25:23 PM - DEBUG - get house page thread1: executor 5 task done
+03/31/2020 21:25:23 PM - DEBUG - get house page thread0: executor 6 task done
+03/31/2020 21:25:23 PM - DEBUG - get house page thread3: executor 2 task done
+03/31/2020 21:25:23 PM - INFO - construct_house_infos finished......
+03/31/2020 21:25:23 PM - INFO - extract_house_detail start......
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread14:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:14 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread13:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:13 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread4:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread6:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:4 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:6 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread10:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:10 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread1:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:1 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread2:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread5:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:2 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:5 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread12:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:12 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread9:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:9 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread3:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:3 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread8:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread15:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:8 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread11:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread7:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:15 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread18:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:11 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:7 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:18 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread17:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:17 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread0:executor 1 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:0 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread19:executor 2 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:19 is done
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread16:executor 2 task
+03/31/2020 21:25:26 PM - DEBUG - extract house detail thread:16 is done
+03/31/2020 21:25:26 PM - INFO - 总共提取22个房屋详细信息
+03/31/2020 21:25:26 PM - INFO - extract house detail :2.850775957107544
+03/31/2020 21:25:26 PM - INFO - extract_house_detail finished......
+03/31/2020 21:25:26 PM - INFO - reduce start......
+03/31/2020 21:25:26 PM - INFO - reduce finished......
+03/31/2020 21:25:26 PM - INFO - ReportForm start......
+03/31/2020 21:25:26 PM - INFO - ReportForm finished......
+03/31/2020 21:25:26 PM - INFO - output_house_info start......
+03/31/2020 21:25:26 PM - INFO - output_house_info finished......
+03/31/2020 21:25:26 PM - INFO - construct_html_file start......
+03/31/2020 21:25:26 PM - INFO - construct_html_file finished......
+03/31/2020 21:25:26 PM - INFO - build_mapping_file start......
+03/31/2020 21:25:26 PM - INFO - build_mapping_file finished......
+03/31/2020 21:25:26 PM - INFO - 2.885338068008423
